@@ -56,5 +56,6 @@
     'app.services',
     'app.common',
     'app.home',
-    'app.about'
+    'app.about',
+    'app.produits'
 ]))
