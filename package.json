@@ -2,7 +2,7 @@
   "name": "tiny-mean-cms",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "Paul de BARTHEZ",
   "license": "MIT",
   "main": "server.js",
   "scripts": {
