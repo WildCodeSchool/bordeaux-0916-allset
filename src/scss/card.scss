@@ -4,36 +4,70 @@
     margin-top: 10px;
 }
 @media (min-width: 992px) {
-    .card.col-md-3,.card.col-lg-3 {
+    .card.col-lg-3,
+    .card.col-md-3 {
         width: 24%;
     }
-
 }
-@media (min-width: 768px) and (max-width:991px){
-  .card.col-sm-4 {
-      width: 32%;
-  }
-  .card.col-sm-12{
-      width: 98%;
-      margin: 1% 1% 0;
-  }
-}
+@media (min-width: 768px) and (max-width:991px) {
+    .card.col-sm-4 {
+        width: 32%;
+    }
 
-@media (max-width: 767px){
-  .card.col-xs-12 {
-      width: 98%;
-      margin: 1% 1% 0;
-  }
+    .card.col-sm-12 {
+        width: 98%;
+        margin: 1% 1% 0;
+    }
+}
+@media (max-width: 767px) {
+    .card.col-xs-12 {
+        width: 98%;
+        margin: 1% 1% 0;
+    }
 }
 
 .card {
-    background: $white;
+    background: $white-transparent;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     min-height: 85px;
     border: 2px solid $white;
-    margin: 0 1% 0 0;
-}
+    margin: -40% 1% 0 0;
+    padding: 20px;
+    border-bottom: 5px solid $primary;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: translateY(0px);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: translateY(0px);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: translateY(0px);
+    transition: all 200ms ease-in;
+    transform: translateY(0px);
 
+    h4 {
+        color: rgb(79,79,79);
+        margin: 25px;
+        font-family: Poppins;
+        font-size: 22px;
+        line-height: 35px;
+        letter-spacing: 0;
+        font-weight: 600;
+    }
+
+}
+.card:hover{
+    box-shadow: 3px 3px 15px gray;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: translateY(-5px);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: translateY(-5px);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: translateY(-5px);
+    transition: all 200ms ease-in;
+    transform: translateY(-5px);
+    background: $white;
+
+}
 .card.hover:hover {
     background-color: $gray;
     cursor: pointer;
@@ -68,14 +102,12 @@
 }
 /* icon */
 .card > .icon {
-    background-color: $primary;
-    border-radius: 50%;
-    color: $white;
+    color: $gray;
     text-align: center;
-    font-size: 21px;
+    font-size: 55px;
     height: 60px;
     width: 60px;
     line-height: 60px;
-    margin-top: -25px;
+    margin-top: 10px;
     display: inline-block;
 }
