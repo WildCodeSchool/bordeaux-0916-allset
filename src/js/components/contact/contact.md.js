@@ -1,9 +1,9 @@
 ((app) => {
     'use strict'
     app.config(['$stateProvider', ($stateProvider) => {
-        $stateProvider.state('app.contact', {
-            url:'/contact',
-            template: '<contact />'
+        $stateProvider.state('app.form', {
+            url:'/form',
+            template: '<form />'
         })
     }])
-})(angular.module('app.contact', ['ui.router']))
+})(angular.module('app.form', ['ui.router']))
