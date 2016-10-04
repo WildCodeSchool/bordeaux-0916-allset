@@ -4,7 +4,7 @@
         templateUrl: 'js/components/common/app.html',
         controller: [function(){
           angular.extend(this, {
-              
+
           })
         }]
     })
