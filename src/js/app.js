@@ -58,4 +58,5 @@
     'app.home',
     'app.about',
     'app.produits'
+    'app.contact'
 ]))
