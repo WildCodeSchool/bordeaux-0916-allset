@@ -14,8 +14,10 @@ footer {
     margin-top: 17px !important;
 
 }
-.footer button {
-    margin-top: 12px !important;
+.footer .btn {
+  background-color: $button;
+  margin-top: 12px !important;
+  color: $white !important;
 }
 
 .footer > .container > span > a,
