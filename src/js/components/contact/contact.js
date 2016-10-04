@@ -1,9 +1,6 @@
 ((app) => {
     'use strict'
     app.component("contact", {
-        templateUrl: 'js/components/contact/contact.html',
-        controller: [function() {
-            angular.extend(this,{})
-        }]
+        templateUrl: 'js/components/contact/contact.html'
     })
 })(angular.module('app.contact'))
