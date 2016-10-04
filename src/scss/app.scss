@@ -7,16 +7,15 @@ app > .container {
 footer {
     background-color: $footer;
     position: static;
-    height: 60px;
     color: $white !important;
 }
 .footer p {
-    margin-top: 17px !important;
+    margin-top: 10px !important;
 
 }
 .footer .btn {
   background-color: $button;
-  margin-top: 12px !important;
+  margin-top: 5px !important;
   color: $white !important;
 }
 
