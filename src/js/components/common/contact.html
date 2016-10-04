@@ -24,7 +24,9 @@
     <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Service technique  +33 (1) 49 38 12 22 </p>
     <p><i class="fa fa-fax fa-lg" aria-hidden="true"></i> Fax  +33 (1) 49 38 12 29 </p>
     <p><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-mail :  <a href="mailto:contact@allset.fr"> contact@allset.fr </a> </p>
-
+    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+    <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+    </div>
 
     <!-- <p> Vos coordonnées ne seront pas diffusées à l'extérieur de la société Allset. -->
         <!-- Vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données vous concernant (loi « Informatique et Libertés » du 6 janvier 1978), -->
@@ -37,12 +39,8 @@
 
   <div class="col-md-6">
     <div>
-      <div id="map"></div>
-      <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-      <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
-    </div>
+    <div id="map"></div>
   </div>
 </div>
-
-
 </div> <!-- div class="row" principale -->
+</div>
