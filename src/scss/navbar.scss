@@ -43,3 +43,32 @@ button.navbar-toggle:hover > .icon-bar {
 .navbar-default .navbar-toggle {
     border-color: $white;
 }
+
+.navbar {
+    top: 30px;
+}
+
+.mininavbar {
+    background-color: $footer;
+    color: $white;
+    font-size: 12px;
+    padding-top: 3px;
+
+    .btn-info {
+        background-color: $button;
+        padding: 0 15px;
+    }
+}
+
+.fixed-bottom {
+    bottom: 0;
+    right: 20px;
+    position: fixed;
+    z-index: 9999999;
+
+    .btn-info {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: $button;
+    }
+}
