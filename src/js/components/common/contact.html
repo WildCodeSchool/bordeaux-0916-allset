@@ -32,16 +32,17 @@
     <!-- </p> -->
 
       </div> <!-- -->
-    </div>
-   <!-- div class="row" -->
-  <div class="row">
-  <div class="col-md-6">
-      <ui-gmap-google-map center="map.center" zoom="map.zoom">
-       <ui-gmap-markers click="clickMarker" icon="'icon'" models="markers" coords="'coord'">
-       </ui-gmap-markers>
-      </ui-gmap-google-map>
 
+   <!-- div class="row" -->
+
+  <div class="col-md-6">
+    <div>
+      <div id="map"></div>
+      <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+      <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+    </div>
   </div>
 </div>
+
 
 </div> <!-- div class="row" principale -->
