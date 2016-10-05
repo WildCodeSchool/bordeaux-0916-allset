@@ -44,9 +44,6 @@ button.navbar-toggle:hover > .icon-bar {
     border-color: $white;
 }
 
-.navbar {
-    top: 30px;
-}
 
 .mininavbar {
     background-color: $footer;
@@ -60,9 +57,9 @@ button.navbar-toggle:hover > .icon-bar {
     }
 }
 
-.fixed-bottom {
+#fixed-bottom {
     bottom: 0;
-    right: 20px;
+    right: 3px;
     position: fixed;
     z-index: 9999999;
 
