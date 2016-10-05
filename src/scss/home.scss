@@ -37,17 +37,19 @@
         transform: translateY(0px);
         height: 80px;
 
-        :hover:not(img):not(h2) {
-            box-shadow: 1px 1px 3px gray;
-            z-index: 2;
-            -webkit-transition: all 200ms ease-in;
-            -webkit-transform: translateY(-2px);
-            -ms-transition: all 200ms ease-in;
-            -ms-transform: translateY(-2px);
-            -moz-transition: all 200ms ease-in;
-            -moz-transform: translateY(-2px);
-            transition: all 200ms ease-in;
-            transform: translateY(-2px);
+        div {
+            :hover:not(img) {
+                box-shadow: 1px 1px 3px gray;
+                z-index: 2;
+                -webkit-transition: all 200ms ease-in;
+                -webkit-transform: translateY(-2px);
+                -ms-transition: all 200ms ease-in;
+                -ms-transform: translateY(-2px);
+                -moz-transition: all 200ms ease-in;
+                -moz-transform: translateY(-2px);
+                transition: all 200ms ease-in;
+                transform: translateY(-2px);
+            }
         }
     }
 
@@ -60,11 +62,11 @@
         margin: 20px;
     }
 }
-.engagement  {
-height: 500px;
- //background-image: url('../img/engagement.jpg');
-background-repeat: no-repeat;
-background-position: bottom;
-background-size: cover;
-//color: $white;
+
+.engagement {
+    height: 500px;
+    //background-image: url('../img/engagement.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; //color: $white;
 }
