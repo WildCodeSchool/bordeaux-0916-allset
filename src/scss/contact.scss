@@ -1,11 +1,4 @@
-
 @import 'colors';
-
-h1 {
-    padding: 20px;
-    color: #00B5AD;
-}
-
 #zdt {
     padding: 25px;
 }
@@ -13,21 +6,40 @@ h1 {
 #button {
     padding-top: 10px;
     padding-bottom: 5px;
-  }
+}
+.contact {
+//  background-color: rgb(73,147,243) !important;
 
+}
 #contact {
+    font-family: andale mono;
+    padding: 50px 0;
+    color: black;
+    letter-spacing: 1px;
+    h2 {
+        color:rgb(40,100,180) !important;
+        padding: 20px;
+        font-family: andale mono;
+    }
 
-  padding : 50px 0 50px 0;
-}
+    i {
+        color: rgb(73,147,243); // rgb(87, 187, 137)
+    }
 
-#contact i {
-    color: rgb(87, 187, 137);
-}
-#contact p {
-  line-height: 200%;
-}
-#contact li {
-  line-height: 170%;
+    p {
+        line-height: 200%;
+        font-size: 17px;
+    }
+
+    li {
+        line-height: 170%;
+    }
+    .filiales {
+      text-align: center !important;
+    }
+    .service {
+      padding: 50px 0 0 0;
+    }
 }
 
 .contactpic {
