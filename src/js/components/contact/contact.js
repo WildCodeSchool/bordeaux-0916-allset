@@ -1,6 +1,6 @@
 ((app) => {
     'use strict'
-    app.component("from", {
+    app.component("contactform", {
         templateUrl: 'js/components/contact/contact.html'
     })
 })(angular.module('app.form'))
