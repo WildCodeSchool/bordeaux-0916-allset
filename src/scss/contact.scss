@@ -1,29 +1,36 @@
 @import 'colors';
+// #contact {
+// height: 600px;
+// }
 
-#contact {
-height: 600px;
-}
 #contact i {
-  color : rgb(87, 187, 137);
+    color: rgb(87, 187, 137);
 }
-.contactpic {
-// background-image: url('../img/paris.jpg');
-background-position: center;
 
+.contactpic {
+    // background-image: url('../img/paris.jpg');
+    background-position: center;
 }
+
 .contact {
-  margin: 30px 0 0 0;
-//  text-align: center
+    margin: 30px 0 0; //  text-align: center
 }
+
 #map {
-    height:420px;
-    width:600px;
+    height: 400px;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
 }
+
 .infoWindowContent {
-    font-size:  14px !important;
+    font-size: 14px !important;
     border-top: 1px solid #ccc;
     padding-top: 10px;
 }
-#class, a {
-  text-align: center;
+
+#class,
+a {
+    text-align: center;
 }
