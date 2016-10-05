@@ -58,5 +58,10 @@
     'app.home',
     'app.about',
     'app.produits',
+<<<<<<< HEAD
     'app.contact'
+=======
+    'app.articles',
+    'app.form'
+>>>>>>> ab3da1972f55e6c9b27e91d00fd346fef4ef7608
 ]))

@@ -166,3 +166,18 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 .text-justify{
     text-align: justify;
 }
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    color: black;
+}
+a:hover{
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, .title, .subtitle {
+    font-family: $fontdefaut;
+}

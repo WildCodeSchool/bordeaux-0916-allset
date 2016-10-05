@@ -1,13 +1,12 @@
 @import 'colors';
 /* navbar */
 .navbar {
-    background-color: $primary;
+    //background-color: $primary;
     border: none;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .navbar-nav > li > a {
-    color: $white !important;
     line-height: 30px;
 }
 
@@ -43,4 +42,30 @@ button.navbar-toggle:hover > .icon-bar {
 
 .navbar-default .navbar-toggle {
     border-color: $white;
+}
+
+
+.mininavbar {
+    background-color: $footer;
+    color: $white;
+    font-size: 12px;
+    padding-top: 3px;
+
+    .btn-info {
+        background-color: $button;
+        padding: 0 15px;
+    }
+}
+
+#fixed-bottom {
+    bottom: 0;
+    right: 3px;
+    position: fixed;
+    z-index: 9999999;
+
+    .btn-info {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: $button;
+    }
 }

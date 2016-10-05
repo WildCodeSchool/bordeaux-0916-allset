@@ -4,17 +4,24 @@ app > .container {
     padding-bottom: 60px;
 }
 /* footer */
-.footer {
-    background-color: $primary;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    color: $white;
+footer {
+    background-color: $footer;
+    position: static;
+    color: $white !important;
 }
-.footer > .container {
-    padding: 15px;
+.footer p {
+    margin-top: 10px !important;
+
 }
+.footer a {
+  color: $white !important;
+}
+.footer .btn {
+  background-color: $button;
+  margin-top: 5px !important;
+  color: $white !important;
+}
+
 .footer > .container > span > a,
 .footer > .container > span > a:hover,
 .footer > .container > span > a:visited {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     padding: 20px;
     color: #00B5AD;
@@ -10,4 +11,41 @@ h1 {
 #button {
     padding-top: 10px;
     padding-bottom: 5px;
+=======
+@import 'colors';
+// #contact {
+// height: 600px;
+// }
+
+#contact i {
+    color: rgb(87, 187, 137);
+}
+
+.contactpic {
+    // background-image: url('../img/paris.jpg');
+    background-position: center;
+}
+
+.contact {
+    margin: 30px 0 0; //  text-align: center
+}
+
+#map {
+    height: 400px;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.infoWindowContent {
+    font-size: 14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#class,
+a {
+    text-align: center;
+>>>>>>> ab3da1972f55e6c9b27e91d00fd346fef4ef7608
 }
