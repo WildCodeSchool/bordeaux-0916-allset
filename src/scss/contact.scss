@@ -1,4 +1,6 @@
 
+@import 'colors';
+
 h1 {
     padding: 20px;
     color: #00B5AD;
@@ -11,8 +13,8 @@ h1 {
 #button {
     padding-top: 10px;
     padding-bottom: 5px;
+  }
 
-@import 'colors';
 #contact {
 
   padding : 50px 0 50px 0;
