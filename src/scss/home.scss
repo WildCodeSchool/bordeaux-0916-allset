@@ -1,17 +1,62 @@
 @import 'colors';
-
 /* intro */
-
 .intro {
     background-image: url('http://unicon.hellominti.com/wp-content/uploads/revslider/somethingbig/bulbs.jpg');
     background-position: center;
     background-size: cover;
     min-height: 245px;
 }
+
 .intro-title {
     margin-top: 125px;
-    color:$primary;
+    color: $text-title;
+    font-size: 45px;
 }
-.subtitle{
-  color:$secondary;
+
+.subtitle {
+    color: $text-default;
+    font-size: 20px;
+}
+
+.references-title {
+    color: $text-title;
+}
+
+.references {
+    background-color: $white;
+    padding: 30px 0;
+
+    div {
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: translateY(0px);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: translateY(0px);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: translateY(0px);
+        transition: all 200ms ease-in;
+        transform: translateY(0px);
+        height: 80px;
+
+        :hover:not(img):not(h2) {
+            box-shadow: 1px 1px 3px gray;
+            z-index: 2;
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: translateY(-2px);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: translateY(-2px);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: translateY(-2px);
+            transition: all 200ms ease-in;
+            transform: translateY(-2px);
+        }
+    }
+
+    img {
+        height: 40px;
+        filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        margin: 20px;
+    }
 }
