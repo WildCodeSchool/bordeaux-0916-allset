@@ -57,6 +57,6 @@
     'app.common',
     'app.home',
     'app.about',
-    'app.produits'
+    'app.produits',
     'app.contact'
 ]))
