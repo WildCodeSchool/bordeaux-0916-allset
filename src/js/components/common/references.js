@@ -20,7 +20,11 @@
     app.component("references", {
         templateUrl: 'js/components/common/references.html',
         controller: function($scope) {
-            $scope.references = references
+          // var c;
+          // for(let i =0 ; i <references.length ; i++){
+          //  c += references[i][1];
+          // }
+          $scope.references = references;
         }
     })
 })(angular.module('app.common'))
