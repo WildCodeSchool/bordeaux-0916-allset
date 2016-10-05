@@ -49,11 +49,15 @@
 
                 var infoWindow = new google.maps.InfoWindow();
 
+                var imagePath = "http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png";
+
                 var createMarker = function(info) {
 
                     var marker = new google.maps.Marker({
                         map: $scope.map,
                         position: new google.maps.LatLng(info.lat, info.long),
+
+                        icon: imagePath,
                         title: info.city
                     });
                     marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
