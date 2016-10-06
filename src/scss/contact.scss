@@ -10,28 +10,26 @@
 }
 
 .contact {
-
-    background-image:url(../img/Contact.jpg);
+    background-image: url("../img/Contact.jpg");
     background-color: rgba(12,13,14, 0.8) !important;
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: cover;
-  //  width: 100%;
+    //  width: 100%;
     padding: 20px;
-
 }
 
 #contact {
     font-family: andale mono;
-    padding: 40px 0;
-    color: white !important ;
+    padding: 2em;
+    color: white !important;
     letter-spacing: 1px;
     background-color: rgba(12,13,14, 0.8) !important;
-
+    margin: -2em;
 
     h2 {
         color: rgb(40,100,180) !important;
-        padding: 0 0 40px 0;
+        padding: 0 0 40px;
         font-family: andale mono;
     }
 
@@ -51,6 +49,9 @@
     .service {
         padding: 40px 0 0;
     }
+    a{
+        color: grey;
+    }
 }
 
 #map {
@@ -58,11 +59,11 @@
     overflow: hidden;
     padding-bottom: 22.25%;
     position: relative;
-    width:auto;
-
+    width: auto;
 }
+
 .map {
-  margin: -163px -32px 0px -80px;
+    margin: -5em 0 0 -1em;
 }
 
 .infoWindowContent {
