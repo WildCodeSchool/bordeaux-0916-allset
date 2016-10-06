@@ -10,12 +10,15 @@
 }
 
 .contact {
-  background-image: url('../img/Contact.jpg');
+
+    background-image:url(../img/Contact.jpg);
+    background-color: rgba(12,13,14, 0.8) !important;
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: cover;
   //  width: 100%;
     padding: 20px;
+
 }
 
 #contact {
@@ -23,6 +26,8 @@
     padding: 40px 0;
     color: white !important ;
     letter-spacing: 1px;
+    background-color: rgba(12,13,14, 0.8) !important;
+
 
     h2 {
         color: rgb(40,100,180) !important;
@@ -70,3 +75,6 @@
 a {
     text-align: center;
 }
+// .nomap {
+//   background-color: rgba(12,13,14, 0.8);
+//}
