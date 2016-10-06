@@ -1,10 +1,4 @@
-
 @import 'colors';
-
-h1 {
-    padding: 20px;
-    color: #00B5AD;
-}
 
 #zdt {
     padding: 25px;
@@ -13,38 +7,57 @@ h1 {
 #button {
     padding-top: 10px;
     padding-bottom: 5px;
-  }
-
-#contact {
-
-  padding : 50px 0 50px 0;
-}
-
-#contact i {
-    color: rgb(87, 187, 137);
-}
-#contact p {
-  line-height: 200%;
-}
-#contact li {
-  line-height: 170%;
-}
-
-.contactpic {
-    // background-image: url('../img/paris.jpg');
-    background-position: center;
 }
 
 .contact {
-    margin: 30px 0 0; //  text-align: center
+  background-image: url('../img/Contact.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+  //  width: 100%;
+    padding: 20px;
+}
+
+#contact {
+    font-family: andale mono;
+    padding: 40px 0;
+    color: white !important ;
+    letter-spacing: 1px;
+
+    h2 {
+        color: rgb(40,100,180) !important;
+        padding: 0 0 40px 0;
+        font-family: andale mono;
+    }
+
+    i {
+        color: rgb(73,147,243); // rgb(87, 187, 137)
+    }
+
+    p {
+        line-height: 200%;
+        font-size: 13px;
+    }
+
+    li {
+        line-height: 170%;
+    }
+
+    .service {
+        padding: 40px 0 0;
+    }
 }
 
 #map {
-    height: 400px;
+    height: 550px;
     overflow: hidden;
     padding-bottom: 22.25%;
-    padding-top: 30px;
     position: relative;
+    width:auto;
+
+}
+.map {
+  margin: -163px -32px 0px -80px;
 }
 
 .infoWindowContent {
