@@ -16,7 +16,7 @@
     background-position: 0 0;
     background-size: cover;
     //  width: 100%;
-    padding: 20px;
+    padding: 2em;
 }
 
 #contact {
@@ -55,11 +55,14 @@
 }
 
 #map {
-    height: 550px;
+    height: 460px;
     overflow: hidden;
     padding-bottom: 22.25%;
     position: relative;
     width: auto;
+    @media (max-width: 767px){
+        height: 260px;
+    }
 }
 
 .map {
