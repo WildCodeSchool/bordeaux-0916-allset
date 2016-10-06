@@ -52,21 +52,33 @@
             }
         }
     }
-
     img {
-        height: 40px;
         filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
-        margin: 20px;
     }
+    @media (max-width: 768px){
+        img {
+            height: 1.5em;
+            margin: 0em;
+        }
+    }
+    @media (min-width: 768px){
+        img {
+            height: 3em;
+            margin: 1em;
+        }
+    }
+
+
 }
 
 .engagement {
-    height: 500px;
+    //height: 500px;
     //background-image: url('../img/engagement.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover; //color: $white;
+    padding: 1em;
 }
