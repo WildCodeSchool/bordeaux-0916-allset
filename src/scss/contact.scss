@@ -1,4 +1,5 @@
 @import 'colors';
+
 #zdt {
     padding: 25px;
 }
@@ -7,18 +8,25 @@
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.contact {
-//  background-color: rgb(73,147,243) !important;
 
+.contact {
+  background-image: url('../img/Contact.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+  //  width: 100%;
+    padding: 20px;
 }
+
 #contact {
     font-family: andale mono;
-    padding: 50px 0;
-    color: black;
+    padding: 40px 0;
+    color: white !important ;
     letter-spacing: 1px;
+
     h2 {
-        color:rgb(40,100,180) !important;
-        padding: 20px;
+        color: rgb(40,100,180) !important;
+        padding: 0 0 40px 0;
         font-family: andale mono;
     }
 
@@ -28,35 +36,28 @@
 
     p {
         line-height: 200%;
-        font-size: 17px;
+        font-size: 13px;
     }
 
     li {
         line-height: 170%;
     }
-    .filiales {
-      text-align: center !important;
-    }
+
     .service {
-      padding: 50px 0 0 0;
+        padding: 40px 0 0;
     }
-}
-
-.contactpic {
-    // background-image: url('../img/paris.jpg');
-    background-position: center;
-}
-
-.contact {
-    margin: 30px 0 0; //  text-align: center
 }
 
 #map {
-    height: 400px;
+    height: 550px;
     overflow: hidden;
     padding-bottom: 22.25%;
-    padding-top: 30px;
     position: relative;
+    width:auto;
+
+}
+.map {
+  margin: -163px -32px 0px -80px;
 }
 
 .infoWindowContent {
