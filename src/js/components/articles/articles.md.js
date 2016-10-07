@@ -2,7 +2,7 @@
     'use strict'
     app.config(['$stateProvider', ($stateProvider) => {
         $stateProvider.state('app.articles', {
-            url:'/services/{{url}}',
+            url:'/services/ + articles.url',
             template: '<articles />'
         })
     }])
