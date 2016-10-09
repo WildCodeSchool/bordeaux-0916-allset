@@ -4,19 +4,25 @@
     padding: 25px;
 }
 
+.ng-invalid.ng-dirty {
+    border-color: red !important;
+}
+
+.ng-valid.ng-dirty {
+    border-color: green !important;
+}
+
 #button {
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .contact {
-    background-image: url("../img/Contact.jpg");
-    background-color: rgba(12,13,14, 0.8) !important;
+    background: rgba(12,13,14, 0.8) url("../img/Contact.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    //  width: 100%;
-    padding: 2em;
+    //  padding: 2em;
 }
 
 #contact {
@@ -25,8 +31,7 @@
     color: white !important;
     letter-spacing: 1px;
     background-color: rgba(12,13,14, 0.8) !important;
-    margin: -2em;
-
+    //  margin: -2em; // Permet une full background-color:rgba(12,13,14, 0.8)
     h2 {
         color: rgb(40,100,180) !important;
         padding: 0 0 40px;
@@ -49,7 +54,8 @@
     .service {
         padding: 40px 0 0;
     }
-    a{
+
+    a {
         color: grey;
     }
 }
@@ -60,13 +66,14 @@
     padding-bottom: 22.25%;
     position: relative;
     width: auto;
-    @media (max-width: 767px){
+    border: 2px white solid !important;
+    @media (max-width: 767px) {
         height: 260px;
     }
 }
 
 .map {
-    margin: 0em 0 0 -1em;
+    margin: 0 0 0 -1em;
 }
 
 .infoWindowContent {

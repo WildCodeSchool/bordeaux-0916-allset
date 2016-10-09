@@ -2,6 +2,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-12">
+            <form >
                   <h1 class="text-center header">Contactez nous</h1>
 
                   <div id="zdt" class="icon-group">
@@ -18,11 +19,10 @@
                       </div>
                   </div>
 
-                  <div id="zdt" class="icon-group">
+                  <div id="zdt" class="icon-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
                       <span class="col-md-1 text-right"><i class="fa fa-envelope-o bigicon"></i></span>
                       <div class="col-md-10">
-                          <input id="email" name="email" type="text" placeholder="Votre @dresse email" class="form-control">
-                      </div>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required/>                      </div>
                   </div>
 
                   <div id="zdt" class="icon-group">
@@ -41,9 +41,10 @@
 
                   <div class="form-group">
                       <div id="button" class="col-md-12 text-center">
-                          <button type="submit" class="btn btn-primary btn-lg">Envoyer!</button>
+                          <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
                       </div>
                   </div>
+                </form>
           </div>
       </div>
   </div>
