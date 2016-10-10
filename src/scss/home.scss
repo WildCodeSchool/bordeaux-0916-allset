@@ -9,7 +9,7 @@
 
 .intro-title {
     margin-top: 125px;
-    color: $text-title;
+    color: $white;
     font-size: 45px;
 }
 
@@ -25,6 +25,7 @@
 .references {
     background-color: $white;
     padding: 30px 0;
+    height: 300px;
 
     div {
         -webkit-transition: all 200ms ease-in;
@@ -70,7 +71,9 @@
             margin: 1em;
         }
     }
-
+    .row {
+      padding-top: 45px;
+    }
 
 }
 
@@ -79,6 +82,14 @@
     //background-image: url('../img/engagement.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover; //color: $white;
+    background-size: cover;
     padding: 1em;
+}
+.apropos {
+  padding: 30px;
+  height:400px;
+        h1 {
+          padding-bottom: 80px;
+        }
+
 }
