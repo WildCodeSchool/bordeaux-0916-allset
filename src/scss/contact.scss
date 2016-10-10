@@ -1,7 +1,7 @@
 @import 'colors';
 
-#zdt {
-    padding: 25px;
+#contact {
+    padding: 50px 0;
 }
 
 .ng-invalid.ng-dirty {
@@ -64,6 +64,7 @@
     height: 460px;
     overflow: hidden;
     padding-bottom: 22.25%;
+    padding-top: 30px;
     position: relative;
     width: auto;
     border: 2px white solid !important;
@@ -74,6 +75,7 @@
 
 .map {
     margin: 0 0 0 -1em;
+
 }
 
 .infoWindowContent {
