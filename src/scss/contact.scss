@@ -1,33 +1,19 @@
-
 @import 'colors';
 
-h1 {
-    padding: 20px;
-    color: #00B5AD;
-}
-
-#zdt {
-    padding: 25px;
-}
-
-#button {
-    padding-top: 10px;
-    padding-bottom: 5px;
-  }
-
 #contact {
-
-  padding : 50px 0 50px 0;
+    padding: 50px 0;
 }
 
 #contact i {
     color: rgb(87, 187, 137);
 }
+
 #contact p {
-  line-height: 200%;
+    line-height: 200%;
 }
+
 #contact li {
-  line-height: 170%;
+    line-height: 170%;
 }
 
 .contactpic {
@@ -56,4 +42,53 @@ h1 {
 #class,
 a {
     text-align: center;
+}
+// modifs vivien under this line
+
+#success_message {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #00b5ad;
+  }
+
+#button {
+    text-align: center;
+}
+
+#ptel {
+    text-align: center;
+    font-size: 120%
+}
+
+#dtell {
+    float: left;
+    padding-left: 30%;
+    font-size: 170%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#dtell:hover {
+    color: #00b5ad;
+    text-transform: full-width;
+}
+
+#dtelr {
+    float: right;
+    padding-right: 30%;
+    font-size: 170%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+#dtelr:hover {
+    color: #00b5ad;
+    text-transform: full-width;
 }

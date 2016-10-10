@@ -14,5 +14,19 @@
     "angular-translate": "~2.11.1",
     "angular-translate-loader-static-files": "~2.11.1",
     "textAngular": "~1.5.9"
-  }
+  },
+  "main": "tiny-mean-cms.js",
+  "homepage": "https://github.com/WildCodeSchool/bordeaux-0916-allset",
+  "authors": [
+    "Bully47 <vivien.prog@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
