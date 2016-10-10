@@ -1,69 +1,36 @@
 @import 'colors';
 
-#zdt {
-    padding: 25px;
+#contact {
+    padding: 50px 0;
 }
 
-#button {
-    padding-top: 10px;
-    padding-bottom: 5px;
+#contact i {
+    color: rgb(87, 187, 137);
+}
+
+#contact p {
+    line-height: 200%;
+}
+
+#contact li {
+    line-height: 170%;
+}
+
+.contactpic {
+    // background-image: url('../img/paris.jpg');
+    background-position: center;
 }
 
 .contact {
-    background-image: url("../img/Contact.jpg");
-    background-color: rgba(12,13,14, 0.8) !important;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    //  width: 100%;
-    padding: 20px;
-}
-
-#contact {
-    font-family: andale mono;
-    padding: 2em;
-    color: white !important;
-    letter-spacing: 1px;
-    background-color: rgba(12,13,14, 0.8) !important;
-    margin: -2em;
-
-    h2 {
-        color: rgb(40,100,180) !important;
-        padding: 0 0 40px;
-        font-family: andale mono;
-    }
-
-    i {
-        color: rgb(73,147,243); // rgb(87, 187, 137)
-    }
-
-    p {
-        line-height: 200%;
-        font-size: 13px;
-    }
-
-    li {
-        line-height: 170%;
-    }
-
-    .service {
-        padding: 40px 0 0;
-    }
-    a{
-        color: grey;
-    }
+    margin: 30px 0 0; //  text-align: center
 }
 
 #map {
-    height: 550px;
+    height: 400px;
     overflow: hidden;
     padding-bottom: 22.25%;
+    padding-top: 30px;
     position: relative;
-    width: auto;
-}
-
-.map {
-    margin: -5em 0 0 -1em;
 }
 
 .infoWindowContent {
@@ -76,6 +43,52 @@
 a {
     text-align: center;
 }
-// .nomap {
-//   background-color: rgba(12,13,14, 0.8);
-//}
+// modifs vivien under this line
+
+#success_message {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #00b5ad;
+  }
+
+#button {
+    text-align: center;
+}
+
+#ptel {
+    text-align: center;
+    font-size: 120%
+}
+
+#dtell {
+    float: left;
+    padding-left: 30%;
+    font-size: 170%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#dtell:hover {
+    color: #00b5ad;
+    text-transform: full-width;
+}
+
+#dtelr {
+    float: right;
+    padding-right: 30%;
+    font-size: 170%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+#dtelr:hover {
+    color: #00b5ad;
+    text-transform: full-width;
+}

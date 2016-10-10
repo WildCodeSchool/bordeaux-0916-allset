@@ -1,48 +1,105 @@
+<h1>Contactez Nous!</h1>
+
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-                <h1 class="text-center header">Contactez nous</h1>
 
-                <div id="zdt" class="icon-group">
-                    <span class="col-md-1 text-right"><i class="fa fa-user bigicon"></i></span>
-                    <div class="col-md-10">
-                        <input id="Prenom" name="nom" type="text" placeholder="Votre Prenom" class="form-control">
+    <form class="well form-horizontal col-md-12" action=" " method="post" id="contact_form">
+        <fieldset>
+
+            <h3>Par Mail via ce formulaire</h3>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Votre Nom</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
+                        <input name="Nom" placeholder="Nom" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <div id="zdt" class="icon-group">
-                    <span class="col-md-1 text-right"><i class="fa fa-user bigicon"></i></span>
-                    <div class="col-md-10">
-                        <input id="Nom" name="nom" type="text" placeholder="Votre Nom" class="form-control">
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Votre Prénom</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
+                        <input name="Prenom" placeholder="Prénom" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <div id="zdt" class="icon-group">
-                    <span class="col-md-1 text-right"><i class="fa fa-envelope-o bigicon"></i></span>
-                    <div class="col-md-10">
-                        <input id="email" name="email" type="text" placeholder="Votre @dresse email" class="form-control">
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Votre E-Mail</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope bigicon"></i></span>
+                        <input name="Email" placeholder="E-Mail" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <div id="zdt" class="icon-group">
-                    <span class="col-md-1 text-right"><i class="fa fa-phone-square bigicon"></i></span>
-                    <div class="col-md-10">
-                        <input id="telephone" name="tel" type="text" placeholder="Votre Numéro de Télephone (06 XX XX XX XX)" class="form-control">
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Votre Telephone</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone bigicon"></i></span>
+                        <input name="Telephone" placeholder="06 XX XX XX XX" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <div id="zdt" class="icon-group">
-                    <span class="col-md-1 text-right"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                    <div class="col-md-10">
-                        <textarea class="form-control" id="message" name="Message" placeholder="Entrez votre message ici, nous y répondrons dans les plus brefs délais, merci de votre confiance." rows="7"></textarea>
+            <!-- radio checks -->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Etes vous clients chez nous?</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label>
+                          <input type="radio" name="hosting" value="oui" /> Oui
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                          <input type="radio" name="hosting" value="non" /> Non
+                        </label>
                     </div>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <div id="button" class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-primary btn-lg">Envoyer!</button>
+            <!-- Text area -->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Votre Message</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-pencil bigicon"></i></span>
+                        <textarea class="form-control" name="comment" placeholder="Message" rows="4"></textarea>
                     </div>
                 </div>
-        </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group" id="button">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning">Envoyer <span class="fa fa-send bigicon"></span></button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+
+<div class="container">
+    <div class="col-md-12">
+        <h3>Par Téléphone</h3>
+        <p id="ptel">Vous pouvez nous contacter par telephone du lundi au vendredi de 8H à 12H et de 14H à 18H et le samedi de 9H a 12H aux numéros suivants:</p>
+        <div id="dtell">01 49 38 12 20</div>
+        <div id=dtelr>01 49 38 12 22</div>
     </div>
 </div>
