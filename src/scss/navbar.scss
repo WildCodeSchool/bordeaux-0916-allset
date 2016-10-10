@@ -13,7 +13,6 @@
 
 .btn {
     color: $white !important;
-    float: right !important;
     // background-color: $button !important;  //m^ coleur que le btn footer
 }
 .bta {
@@ -41,7 +40,7 @@
 .navbar-default .navbar-toggle .icon-bar,
 button.navbar-default,
 button.navbar-toggle:hover {
-    background-color: $white !important;
+   background-color: $white !important;
 }
 
 button.navbar-default > .icon-bar,
