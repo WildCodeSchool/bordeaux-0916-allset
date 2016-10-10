@@ -1,5 +1,6 @@
 @import 'colors';
 
+<<<<<<< HEAD
 #contact {
     padding: 50px 0;
 }
@@ -15,22 +16,82 @@
 #contact li {
     line-height: 170%;
 }
+=======
+#zdt {
+    padding: 25px;
+}
 
-.contactpic {
-    // background-image: url('../img/paris.jpg');
-    background-position: center;
+.ng-invalid.ng-dirty {
+    border-color: red !important;
+}
+
+.ng-valid.ng-dirty {
+    border-color: green !important;
+}
+
+#button {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .contact {
-    margin: 30px 0 0; //  text-align: center
+    background: rgba(12,13,14, 0.8) url("../img/Contact.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    //  padding: 2em;
+}
+
+#contact {
+    font-family: andale mono;
+    padding: 2em;
+    color: white !important;
+    letter-spacing: 1px;
+    background-color: rgba(12,13,14, 0.8) !important;
+    //  margin: -2em; // Permet une full background-color:rgba(12,13,14, 0.8)
+    h2 {
+        color: rgb(40,100,180) !important;
+        padding: 0 0 40px;
+        font-family: andale mono;
+    }
+
+    i {
+        color: rgb(73,147,243); // rgb(87, 187, 137)
+    }
+
+    p {
+        line-height: 200%;
+        font-size: 13px;
+    }
+>>>>>>> 14931f7953a9e9a8472c8b04435bd10646026a58
+
+    li {
+        line-height: 170%;
+    }
+
+    .service {
+        padding: 40px 0 0;
+    }
+
+    a {
+        color: grey;
+    }
 }
 
 #map {
-    height: 400px;
+    height: 460px;
     overflow: hidden;
     padding-bottom: 22.25%;
-    padding-top: 30px;
     position: relative;
+    width: auto;
+    border: 2px white solid !important;
+    @media (max-width: 767px) {
+        height: 260px;
+    }
+}
+
+.map {
+    margin: 0 0 0 -1em;
 }
 
 .infoWindowContent {
@@ -43,6 +104,7 @@
 a {
     text-align: center;
 }
+<<<<<<< HEAD
 // modifs vivien under this line
 
 #success_message {
@@ -92,3 +154,8 @@ h3 {
     color: #00b5ad;
     text-transform: full-width;
 }
+=======
+// .nomap {
+//   background-color: rgba(12,13,14, 0.8);
+//}
+>>>>>>> 14931f7953a9e9a8472c8b04435bd10646026a58

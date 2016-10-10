@@ -6,20 +6,26 @@ app > .container {
 /* footer */
 footer {
     background-color: $footer;
-    position: static;
+    text-align: center;
+    bottom: 0;
     color: $white !important;
 }
-.footer p {
-    margin-top: 10px !important;
 
-}
-.footer a {
-  color: $white !important;
-}
-.footer .btn {
-  background-color: $button;
-  margin-top: 5px !important;
-  color: $white !important;
+.footer {
+    p {
+        margin-top: 10px !important;
+        border-right: 1px solid #fff;
+    }
+
+    a {
+        color: $white !important;
+    }
+
+    .btn {
+        background-color: $button;
+        margin-top: 5px !important;
+        color: $white !important;
+    }
 }
 
 .footer > .container > span > a,

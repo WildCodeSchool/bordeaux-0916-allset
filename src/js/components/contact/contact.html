@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Contactez Nous!</h1>
 
 <div class="container">
@@ -103,3 +104,59 @@
         <div id=dtelr>01 49 38 12 22</div>
     </div>
 </div>
+=======
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <form >
+                  <h1 class="text-center header">Contactez nous</h1>
+
+                  <div id="zdt" class="icon-group">
+                      <span class="col-md-1 text-right"><i class="fa fa-user bigicon"></i></span>
+                      <div class="col-md-10">
+                          <input id="Prenom" name="nom" type="text" placeholder="Votre Prenom" class="form-control">
+                      </div>
+                  </div>
+
+                  <div id="zdt" class="icon-group">
+                      <span class="col-md-1 text-right"><i class="fa fa-user bigicon"></i></span>
+                      <div class="col-md-10">
+                          <input id="Nom" name="nom" type="text" placeholder="Votre Nom" class="form-control">
+                      </div>
+                  </div>
+
+                  <div id="zdt" class="icon-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                      <span class="col-md-1 text-right"><i class="fa fa-envelope-o bigicon"></i></span>
+                      <div class="col-md-10">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required/>                      </div>
+                  </div>
+
+                  <div id="zdt" class="icon-group">
+                      <span class="col-md-1 text-right"><i class="fa fa-phone-square bigicon"></i></span>
+                      <div class="col-md-10">
+                          <input id="telephone" name="tel" type="text" placeholder="Votre Numéro de Télephone (06 XX XX XX XX)" class="form-control">
+                      </div>
+                  </div>
+
+                  <div id="zdt" class="icon-group">
+                      <span class="col-md-1 text-right"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                      <div class="col-md-10">
+                          <textarea class="form-control" id="message" name="Message" placeholder="Entrez votre message ici, nous y répondrons dans les plus brefs délais, merci de votre confiance." rows="7"></textarea>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <div id="button" class="col-md-12 text-center">
+                          <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+                      </div>
+                  </div>
+                </form>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="contact">
+  <contact></contact>
+</section>
+>>>>>>> 14931f7953a9e9a8472c8b04435bd10646026a58

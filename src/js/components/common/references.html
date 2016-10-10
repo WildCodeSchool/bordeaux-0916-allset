@@ -6,7 +6,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-3 text-center" ng-repeat="reference in references">
+            <div class="col-xs-3 text-center" ng-repeat="reference in references | limitTo : 4 : carouselReferences">
                 <img src="{{reference.image}}" alt="{{reference.name}}" />
             </div>
         </div>

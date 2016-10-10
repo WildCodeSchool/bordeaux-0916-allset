@@ -2,35 +2,17 @@
     'use strict'
     var cities = [
     {
-        city : 'Bordeaux',
-        desc : 'La ville de Bordeaux',
-        lat : 44.8404400,
-        long : -0.5805000
-    },
-    {
-        city : 'New York',
-        desc : 'This city is aiiiiite!',
-        lat : 40.6700,
-        long : -73.9400
+        city : 'Mérignac',
+        desc : '25 RUE MARCEL ISSARTIER - 33700 MERIGNAC',
+        lat : 44.84007510000001,
+        long : -0.7161892999999964
     },
     {
         city : 'Paris',
-        desc : 'La capitale touristique',
-        lat : 48.856614,
-        long : 2.3522219000000177
+        desc : '460 VOIE DE LA COURTINE - 93160 NOISY LE GRAND',
+        lat : 48.8388763,
+        long : 2.5435062000000244
     },
-    {
-        city : 'Los Angeles',
-        desc : 'This city is live!',
-        lat : 34.0500,
-        long : -118.2500
-    },
-    {
-        city : 'Las Vegas',
-        desc : 'Une filiale AllSet, pas comme les autres ...',
-        lat : 36.0800,
-        long : -115.1522
-    }
 ];
 
     app.component("contact", {
