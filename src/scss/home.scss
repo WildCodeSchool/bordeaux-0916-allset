@@ -1,16 +1,19 @@
 @import 'colors';
 /* intro */
 .intro {
-    background-image:  url('http://unicon.hellominti.com/wp-content/uploads/revslider/somethingbig/bulbs.jpg');// url('../img/databinding.jpg');
+
+    background-image:  url('../img/introphoto1.jpeg');// url('../img/databinding.jpg');
+  //  opacity: 0.5;
     background-position: center;
     background-size: cover;
-    min-height: 245px;
+    min-height: 40em;
 }
 
 .intro-title {
-    margin-top: 125px;
+    margin-top: 60px;
     color: $white;
     font-size: 45px;
+
 }
 
 .subtitle {
