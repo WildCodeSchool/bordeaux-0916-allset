@@ -14,7 +14,9 @@ footer {
 .footer {
     p {
         margin-top: 10px !important;
-        border-right: 1px solid #fff;
+        @media (min-width: 768px) {
+            border-right: 1px solid #fff;
+        }
     }
 
     a {

@@ -31,7 +31,7 @@
     color: white !important;
   //  letter-spacing: 1px;
     background-color: rgba(12,13,14, 0.8) !important;
-    height: 49em;
+    //height: 49em;
     //  margin: -2em; // Permet une full background-color:rgba(12,13,14, 0.8)
 
     h2 {
@@ -63,7 +63,7 @@
 }
 
 #map {
-    height: 460px;
+    min-height: 460px;
     overflow: hidden;
     padding-bottom: 22.25%;
     position: relative;
