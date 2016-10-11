@@ -88,19 +88,20 @@ a {
     text-align: center;
 }
 // modifs vivien under this line
-
 #success_message {
     display: none;
 }
 
 h1 {
-    text-align: center;
     color: #00b5ad;
-    margin-right: 5%;
+    padding-top: 15px;
 }
 
 #button {
-    text-align: center;
-    margin-right: 6%;
-    padding-top: 15px;
+  padding-top: 280px;
+}
+
+#containerContactForm {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

@@ -15,21 +15,21 @@
     color: $white !important;
     // background-color: $button !important;  //m^ coleur que le btn footer
 }
-.bta {
 
-}
+.bta {}
+
 .bta:hover {
     background-color: $primary !important;
 }
 
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-  //  background-color: rgba(0, 0, 0, 0.2) !important;
-      border-bottom: 2px solid #4DBF9A;
+    //  background-color: rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 2px solid #4DBF9A;
 }
 
 .navbar-nav > .selected > a {
-//    border-bottom: 2px solid $white; A voir si on laisse ou pas
+    //    border-bottom: 2px solid $white; A voir si on laisse ou pas
 }
 
 .navbar-nav > li > a > img.circle {
@@ -40,7 +40,7 @@
 .navbar-default .navbar-toggle .icon-bar,
 button.navbar-default,
 button.navbar-toggle:hover {
-   background-color: $white !important;
+    background-color: $white !important;
 }
 
 button.navbar-default > .icon-bar,
