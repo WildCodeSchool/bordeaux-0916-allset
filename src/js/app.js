@@ -58,6 +58,6 @@
     'app.home',
     'app.about',
     'app.produits',
-    'app.articles',
+    'app.myservices',
     'app.form'
 ]))
