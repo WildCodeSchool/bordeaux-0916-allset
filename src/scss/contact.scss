@@ -4,33 +4,78 @@
     padding: 50px 0;
 }
 
-#contact i {
-    color: rgb(87, 187, 137);
+.ng-invalid.ng-dirty {
+    border-color: red !important;
 }
 
-#contact p {
-    line-height: 200%;
+.ng-valid.ng-dirty {
+    border-color: green !important;
 }
 
-#contact li {
-    line-height: 170%;
-}
-
-.contactpic {
-    // background-image: url('../img/paris.jpg');
-    background-position: center;
+#button {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .contact {
-    margin: 30px 0 0; //  text-align: center
+    background: rgba(12,13,14, 0.8) url("../img/Contact.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    //  padding: 2em;
+}
+
+#contact {
+    font-family: andale mono;
+    padding: 2em;
+    color: white !important;
+    letter-spacing: 1px;
+    background-color: rgba(12,13,14, 0.8) !important;
+    height: 675px;
+    //  margin: -2em; // Permet une full background-color:rgba(12,13,14, 0.8)
+    h2 {
+        color: rgb(40,100,180) !important;
+        padding: 0 0 40px;
+        font-family: andale mono;
+    }
+
+    i {
+        color: rgb(73,147,243); // rgb(87, 187, 137)
+    }
+
+    p {
+        line-height: 200%;
+        font-size: 13px;
+    }
+
+    li {
+        line-height: 170%;
+    }
+
+    .service {
+        padding: 40px 0 0;
+    }
+
+    a {
+        color: grey;
+    }
 }
 
 #map {
-    height: 400px;
+    height: 460px;
     overflow: hidden;
     padding-bottom: 22.25%;
-    padding-top: 30px;
     position: relative;
+    width: auto;
+    border: 2px white solid !important;
+    @media (max-width: 767px) {
+        height: 260px;
+    }
+}
+
+.map {
+    margin: 0 0 0 -1em;
+
 }
 
 .infoWindowContent {
@@ -51,44 +96,12 @@ a {
 
 h1 {
     text-align: center;
-}
-
-h3 {
-    text-align: center;
     color: #00b5ad;
-  }
+    margin-right: 5%;
+}
 
 #button {
     text-align: center;
-}
-
-#ptel {
-    text-align: center;
-    font-size: 120%
-}
-
-#dtell {
-    float: left;
-    padding-left: 30%;
-    font-size: 170%;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-#dtell:hover {
-    color: #00b5ad;
-    text-transform: full-width;
-}
-
-#dtelr {
-    float: right;
-    padding-right: 30%;
-    font-size: 170%;
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-
-#dtelr:hover {
-    color: #00b5ad;
-    text-transform: full-width;
+    margin-right: 6%;
+    padding-top: 15px;
 }

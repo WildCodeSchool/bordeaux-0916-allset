@@ -20,7 +20,7 @@
             controller: function($scope) {
 
                 var mapOptions = {
-                    zoom: 4,
+                    zoom: 5,
                     center: new google.maps.LatLng(46.227638, 2.213749000000007),
                     mapTypeId: google.maps.MapTypeId.TERRAIN
                 }

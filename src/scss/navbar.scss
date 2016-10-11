@@ -4,19 +4,32 @@
     //background-color: $primary;
     border: none;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0;
 }
 
 .navbar-nav > li > a {
     line-height: 30px;
 }
 
+.btn {
+    color: $white !important;
+    // background-color: $button !important;  //m^ coleur que le btn footer
+}
+.bta {
+
+}
+.bta:hover {
+    background-color: $primary !important;
+}
+
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+  //  background-color: rgba(0, 0, 0, 0.2) !important;
+      border-bottom: 2px solid #4DBF9A;
 }
 
 .navbar-nav > .selected > a {
-    border-bottom: 2px solid $white;
+//    border-bottom: 2px solid $white; A voir si on laisse ou pas
 }
 
 .navbar-nav > li > a > img.circle {
@@ -27,7 +40,7 @@
 .navbar-default .navbar-toggle .icon-bar,
 button.navbar-default,
 button.navbar-toggle:hover {
-    background-color: $white !important;
+   background-color: $white !important;
 }
 
 button.navbar-default > .icon-bar,
@@ -43,7 +56,6 @@ button.navbar-toggle:hover > .icon-bar {
 .navbar-default .navbar-toggle {
     border-color: $white;
 }
-
 
 .mininavbar {
     background-color: $footer;

@@ -1,5 +1,5 @@
 <header class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" ui-sref="app.home"><img src="#" alt="" height="30"></a>
             <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -14,6 +14,8 @@
               <li ui-sref-active="selected"><a ui-sref="app.home">{{'COMMON_HOME' | translate}}</a></li>
               <li ui-sref-active="selected"><a ui-sref="app.produits">{{'COMMON_PRODUCT' | translate}}</a></li>
               <li ui-sref-active="selected"><a ui-sref="app.form">{{'COMMON_ABOUT' | translate}}</a></li>
+              <li class="bta" ui-sref-active="selected"><a ui-sref="app.form" href="#" class="btn btn-info"><i class="fa fa-laptop fa-lg"></i> {{'COMMON_ASSISTANCE' | translate}}</a>
+</li>
             </ul>
         </nav>
     </div>
