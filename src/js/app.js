@@ -47,6 +47,7 @@
     'ui.router',
     'ngCookies',
     'ngSanitize',
+    'ngAnimate',
     'angular-md5',
     'ngAnimate',
     'InlineTextEditor',

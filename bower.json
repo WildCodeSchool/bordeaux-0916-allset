@@ -18,9 +18,13 @@
   },
   "main": "tiny-mean-cms.js",
   "homepage": "https://github.com/WildCodeSchool/bordeaux-0916-allset",
+<<<<<<< HEAD
   "authors": [
 
   ],
+=======
+  "authors": [],
+>>>>>>> Paul
   "description": "",
   "license": "MIT",
   "ignore": [
