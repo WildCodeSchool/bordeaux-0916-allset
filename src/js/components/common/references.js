@@ -13,7 +13,7 @@
                 } else {
                     $scope.carouselReferences++
                 }
-            }, 1000)
+            }, 10000)
 
             $scope.references = [{
                 name: 'Groupe Chèque Déjeuner',

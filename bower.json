@@ -13,12 +13,13 @@
     "angular-inline-text-editor": "https://github.com/jbehuet/angular-inline-text-editor.git#~0.3.19",
     "angular-translate": "~2.11.1",
     "angular-translate-loader-static-files": "~2.11.1",
-    "textAngular": "~1.5.9"
+    "textAngular": "~1.5.9",
+    "angular-animate": "^1.5.8"
   },
   "main": "tiny-mean-cms.js",
   "homepage": "https://github.com/WildCodeSchool/bordeaux-0916-allset",
   "authors": [
-    
+
   ],
   "description": "",
   "license": "MIT",
