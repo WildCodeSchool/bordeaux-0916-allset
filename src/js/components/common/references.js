@@ -13,7 +13,7 @@
                 } else {
                     $scope.carouselReferences++
                 }
-            }, 10000)
+            }, 3000)
 
             $scope.references = [{
                 name: 'Groupe Chèque Déjeuner',
@@ -40,6 +40,7 @@
                 name: 'Bayern LB',
                 image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bayernlb-logo.svg/2000px-Bayernlb-logo.svg.png'
             }]
+
         }
     })
 })(angular.module('app.common'))
