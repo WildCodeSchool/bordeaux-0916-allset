@@ -7,10 +7,9 @@
                 lesapropos: {
                     'notre-metier': {
                         title: 'Notre Métier',
-                        subtitle: 'Sous titre',
+                        subtitle: 'Gestion des changements',
                         image: '',
-                        texte: ''
-
+                        texte: 'Les prestations sont adaptées aux contextes technologique et organisationnel de chaque client : \n',                        
                     },
                     'nos-demarches': {
                         title: 'Nos démarches',
