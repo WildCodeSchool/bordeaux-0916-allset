@@ -1,7 +1,7 @@
 @import 'colors';
 
 #contact {
-    padding: 50px 0;
+    padding: 6em 0;
 }
 
 .ng-invalid.ng-dirty {
@@ -29,13 +29,13 @@
     font-family: andale mono;
     padding: 2em;
     color: white !important;
-    letter-spacing: 1px;
+    //  letter-spacing: 1px;
     background-color: rgba(12,13,14, 0.8) !important;
-    height: 675px;
+    //height: 49em;
     //  margin: -2em; // Permet une full background-color:rgba(12,13,14, 0.8)
     h2 {
         color: rgb(40,100,180) !important;
-        padding: 0 0 40px;
+        padding: 0 0 2em;
         font-family: andale mono;
     }
 
@@ -45,7 +45,7 @@
 
     p {
         line-height: 200%;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     li {
@@ -53,7 +53,7 @@
     }
 
     .service {
-        padding: 40px 0 0;
+        padding: 2em 0 0;
     }
 
     a {
@@ -62,7 +62,8 @@
 }
 
 #map {
-    height: 460px;
+    min-height: 460px;
+    height: 35em;
     overflow: hidden;
     padding-bottom: 22.25%;
     position: relative;
@@ -94,13 +95,15 @@ a {
 }
 
 h1 {
-    text-align: center;
     color: #00b5ad;
-    margin-right: 5%;
+    padding-top: 15px;
 }
 
 #button {
-    text-align: center;
-    margin-right: 6%;
-    padding-top: 15px;
+    padding-top: 280px;
+}
+
+#containerContactForm {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

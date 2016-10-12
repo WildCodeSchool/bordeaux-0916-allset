@@ -1,8 +1,8 @@
 @import 'colors';
 /* container */
-app > .container {
-    padding-bottom: 60px;
-}
+// app > .container {
+//     padding-bottom: 60px;
+// }
 /* footer */
 footer {
     background-color: $footer;
@@ -13,8 +13,12 @@ footer {
 
 .footer {
     p {
-        margin-top: 10px !important;
-        border-right: 1px solid #fff;
+
+        margin-top: 0.8em !important;
+        @media (min-width: 768px) {
+            border-right: 1px solid #fff;
+        }
+
     }
 
     a {
@@ -23,7 +27,7 @@ footer {
 
     .btn {
         background-color: $button;
-        margin-top: 5px !important;
+        margin-top: 0.3em !important;
         color: $white !important;
     }
 }

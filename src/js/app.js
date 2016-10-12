@@ -59,5 +59,6 @@
     'app.about',
     'app.produits',
     'app.myservices',
-    'app.form'
+    'app.form',
+    'app.lesapropos'
 ]))

@@ -8,12 +8,12 @@
             $scope.carouselReferences = 0
 
             $interval(function() {
-                if ($scope.carouselReferences >= $scope.references.length - 1){
+                if ($scope.carouselReferences >= $scope.references.length - 4){
                     $scope.carouselReferences = 0
                 } else {
                     $scope.carouselReferences++
                 }
-            }, 3000)
+            }, 1000)
 
             $scope.references = [{
                 name: 'Groupe Chèque Déjeuner',

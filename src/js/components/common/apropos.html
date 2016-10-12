@@ -1,21 +1,16 @@
-<div class="container">
-    <div class="apropos" id="apropos">
-        <h1> À propos d'AllSet  </h1>
-        <div class="row">
-            <div class="col-lg-4">
-                <h4> Notre Métier </h4>
-                <p> Spécialiste des systèmes et réseaux, AllSet vous accompagne dans la gestion des changements et dans la gestion d'exploitation de votre système d'information </p>
-            </div>
-            <div class="col-lg-4">
-                <h4> Nos Démarches </h4>
-                <p> Les prestations proposées s'adaptent aux besoins de chaque client ...</p>
-            </div>
-            <div class="col-lg-4">
-                <h4> Notre Organisation </h4>
-                <p>Les Fondateurs de notre société, AllSet, bénéficient de plus de 20 ans d'expérience cumulée en gestion et en réalisation de projets informatiques ...</p>
-            </div>
-        </div>
+<div class="">
+    <div class="container text-center">
+        <h1 class="intro-title">
+            {{$ctrl.selectedApropos.title}}
+        </h1>
+        <p class="subtitle text">
+            {{$ctrl.selectedApropos.subtitle}}
+        </p>
     </div>
-
+    <div class="container">
+        <img ng-src="{{$ctrl.selectedApropos.image}}"/>
+        <p>
+            {{$ctrl.selectedApropos.texte}}
+        </p>
+    </div>
 </div>
-<!-- div class="container" -->

@@ -11,7 +11,7 @@
 
 .intro-title {
     margin-top: 60px;
-    color: $white;
+    color: #455a64;
     font-size: 45px;
 
 }
@@ -28,7 +28,7 @@
 .references {
     background-color: $white;
     padding: 30px 0;
-    height: 300px;
+    height: 22em;
 
     div {
         -webkit-transition: all 200ms ease-in;
@@ -81,16 +81,21 @@
 }
 
 .engagement {
-    //height: 500px;
-    //background-image: url('../img/engagement.jpg');
+  //  height: 40em;
+   //background-image: url("../img/engagement1.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     padding: 1em;
+    height: 30em;
+}
+.enga img {
+  width: auto;
+  height: 25em;
 }
 .apropos {
   padding: 30px;
-  height:400px;
+  height: 30em;
         h1 {
           padding-bottom: 80px;
         }
