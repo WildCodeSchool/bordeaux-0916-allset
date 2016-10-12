@@ -88,6 +88,7 @@ a {
     text-align: center;
 }
 // modifs vivien under this line
+
 #success_message {
     display: none;
 }
@@ -98,10 +99,24 @@ h1 {
 }
 
 #button {
-  padding-top: 280px;
+    padding-top: 20px;
 }
 
 #containerContactForm {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+#selectReasonToContact {
+    padding-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 0 solid #ccc;
+}
+
+.input-group-addon {
+    border-radius: 0;
+    border: 0 solid #ccc;
 }
