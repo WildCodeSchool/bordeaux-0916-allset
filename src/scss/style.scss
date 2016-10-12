@@ -185,27 +185,31 @@ h5 {
     font-family: $fontdefaut;
 }
 
-.slideleft.ng-enter,
-.slideleft.ng-move {
-    transition: all 3s linear;
-    transform: translate(3em,0);
+
+.animate-enter,
+.animate-leave
+{
+	-webkit-transition: 2s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-moz-transition: 2s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-ms-transition: 2s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	transition: 2s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: clip;
+	white-space:nowrap;
 }
 
-.slideleft.ng-enter.ng-enter-active,
-.slideleft.ng-move.ng-move-active {
-    opacity: 1;
+.animate-leave.animate-leave-active,
+.animate-enter {
+	opacity: 0;
+	width: 0px;
+	height: 0px;
 }
 
-.slideleft.ng-leave {
-    animation: 3s my_animation;
-    transform: translate(3em,0);
-}
-@keyframes my_animation {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
+.animate-enter.animate-enter-active,
+.animate-leave {
+	opacity: 1;
+	width: 150px;
+	height: 30px;
 }
