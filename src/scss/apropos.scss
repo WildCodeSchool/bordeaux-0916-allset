@@ -1,0 +1,31 @@
+@import 'colors';
+
+#apropos {
+    h1,
+    h4 {
+        text-align: center;
+    }
+
+    p {
+        padding: 2em 0 0;
+    }
+}
+
+#apropos {
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    h3 {
+        padding: 2em 0;
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+  }
+  li {
+      margin-left: 1em;
+  }
+}
