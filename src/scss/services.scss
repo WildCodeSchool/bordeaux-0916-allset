@@ -1,5 +1,9 @@
 @import 'colors';
 
+.intro{
+  height: 400px;
+}
+
 .services {
     min-height: 400px;
     display: block;
@@ -18,5 +22,22 @@
     right: 0;
     position: absolute;
     z-index: -1;
+}
 
+.myservice{
+    background-color: white;
+    height: 100%;
+    .img-container {
+        height: 25em;
+    }
+
+    .text-article {
+        width: 700px;
+        margin: 5% auto;
+        p{
+            text-align: justify;
+            font-size: 20px;
+        }
+
+    }
 }

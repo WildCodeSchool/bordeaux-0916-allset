@@ -1,7 +1,13 @@
 <h1 class="text-center">Contactez Nous!</h1>
 
+<<<<<<< HEAD
 <div class="container" id="containerContactForm">
     <form class="form-horizontal col-md-5" action=" " method="post">
+=======
+<div class="container">
+    <form name="myform" class="form-horizontal col-md-5" action=" " method="post" id="contact_form" style="float: left; padding-top: 50px; padding-bottom: 30px;">
+        <fieldset>
+>>>>>>> Paul
 
         <div class="form-group">
             <div class="inputGroupContainer col-md-12">
@@ -30,11 +36,16 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <div class="inputGroupContainer col-md-12">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-phone bigicon"></i></span>
-                    <input name="Telephone" placeholder="Téléphone" class="form-control" type="text">
+
+            <!-- Text input-->
+
+
+            
+            <div class="form-group">
+                <div class="inputGroupContainer col-md-10" style="float: right">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone bigicon"></i></span>
+                        <input name="telephone" ng-pattern="phoneNumberPattern" placeholder="Téléphone" class="form-control" type="text" ng-required="requireTel">
                 </div>
             </div>
         </div>
