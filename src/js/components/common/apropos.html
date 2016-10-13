@@ -1,16 +1,49 @@
 <div class="">
     <div class="container text-center">
-        <h1 class="intro-title">
-            {{$ctrl.selectedApropos.title}}
+        <h1 class="intro-title" ng-bind-html="$ctrl.selectedApropos.title">
+
         </h1>
-        <p class="subtitle text">
-            {{$ctrl.selectedApropos.subtitle}}
+        <p class="subtitle text" ng-bind-html="$ctrl.selectedApropos.subtitle">
+
         </p>
     </div>
     <div class="container">
-        <img ng-src="{{$ctrl.selectedApropos.image}}"/>
-        <p>
-            {{$ctrl.selectedApropos.texte}}
-        </p>
+        <img ng-src="{{$ctrl.selectedApropos.image}}" />
+        <p ng-bind-html="$ctrl.selectedApropos.texte"></p>
     </div>
+
+    
+    <div class="container">
+        <p ng-bind-html="$ctrl.selectedApropos.texte1"> </p>
+    </div>
+
+
+    <div class="container">
+        <p ng-bind-html="$ctrl.selectedApropos.texte2"> </p>
+    </div>
+
+
+    <div class="container">
+        <h2>Agents Commerciaux et partenaires </h2>
+        <p>Vous contribuez régulièrement à des projets informatiques ou souhaitez profiter des opportunités de ce marché pour développer votre activité ? <br><br> AllSet vous ouvre les portes d'une communauté dynamique, au sein de laquelle vous pourrez pleinement
+            développer votre business.</p>
+
+        <h3>Nos solutions vous intéressent?</h3>
+        <p>AllSet fournit aux entreprises l'expertise pour vendre, gérer, intégrer et planifier des solutions Allset destinées à leurs clients.</p>
+        <h3>Qui peut devenir partenaire ?</h3>
+        <ul>
+        <li>Des entreprises à la recherche d'un partenaire informatique pour la distribution de nos produits et services,<li>
+        <li>Des agents commerciaux en recherche d'une compétence globale dans le secteur de l'informatique (Serveur, ordinateur, téléphone IP, configuration,
+        services...).</li>
+
+         <p>AllSet apporte une solution globale pour vos clients, un nouveau catalogue complet dans la fourniture et le service informatique.<p>
+        <p> C'est dans le même esprit que AllSet vous propose aujourd'hui de devenir partenaire. En associant votre
+        connaissance des clients et de leurs Systèmes d'Information à l'expertise d'AllSet.<p>
+
+        <p>   Pour plus d'information, n'hésitez pas à nous<a  ui-sref="app.form"> contacter</a>.<p>
+
+
+
+    </div>
+
 </div>
