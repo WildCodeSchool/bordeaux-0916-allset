@@ -1,13 +1,12 @@
 @import 'colors';
 
 #apropos {
+    h1,
+    h4 {
+        text-align: center;
+    }
 
-  h1 {
-    text-align: center;
-  }
-}
-
-#button {
-  padding-top: -2em;
-  margin-bottom: 3em;
+    p {
+        padding: 2em 0 0;
+    }
 }
