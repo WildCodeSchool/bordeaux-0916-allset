@@ -58,7 +58,7 @@
     'app.services',
     'app.common',
     'app.home',
-    'app.about',
+    'app.assistance',
     'app.produits',
     'app.myservices',
     'app.form',
