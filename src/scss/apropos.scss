@@ -1,9 +1,12 @@
 @import 'colors';
 
-#apropos {
+#aproposhome {
+    padding: 0 0 6em;
+
     h1,
     h4 {
         text-align: center;
+        color: black !important;
     }
 
     p {
@@ -11,21 +14,40 @@
     }
 }
 
-#apropos {
-    h2,
-    h3 {
-        text-align: center;
+#commune {
+
+    font-size: 20px;
+    padding: 0 0 6em ;
+
+
+    .block {
+      margin: 6em auto;
+      width: 700px;
+      display: block;
     }
 
-    h3 {
-        padding: 2em 0;
+    h2, h3 {
+        padding: 2em;
     }
 
-    ul {
-      margin-left: 0;
-      padding-left: 0;
-  }
-  li {
-      margin-left: 1em;
-  }
+    ul:first-child{
+      padding:2em;
+    }
+
+    p {
+        text-align: justify;
+
+    }
+    .subtitle {
+      text-align: center;
+    //  padding: 2em;
+    }
+    img {
+
+      padding-top: 5em;
+      height: 25em;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 }
