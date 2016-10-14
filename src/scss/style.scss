@@ -185,15 +185,19 @@ h5 {
     font-family: $fontdefaut;
 }
 
+
+
+
 .assistance{
   .inputGroupContainer{
       padding: 1em;
   }
+
   .intro-assistance{
       height: 20em;
   }
   .container{
-      height: 20em;
+      height: 23em;
   }
 }
 
@@ -201,4 +205,8 @@ h5 {
     &:hover, &:focus, &:active, &:active:focus{
         background-color : #00b5ad;
     }
+}
+
+.espassistance {
+  padding-top: 4em;
 }
