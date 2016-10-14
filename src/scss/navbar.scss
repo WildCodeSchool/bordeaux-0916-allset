@@ -16,20 +16,25 @@
     // background-color: $button !important;  //m^ coleur que le btn footer
 }
 
-.bta {}
-
-.bta:hover {
-    background-color: $primary !important;
+.bta {
+  background-color: $primary;
 }
+.bta:hover {
+  background-color: $white;
+
+}
+
 
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-    //  background-color: rgba(0, 0, 0, 0.2) !important;
+    color: $primary !important;
     border-bottom: 2px solid #4DBF9A;
 }
 
-.navbar-nav > .selected > a {
-    //    border-bottom: 2px solid $white; A voir si on laisse ou pas
+.navbar-nav > .selected:not(:first-child) > a {
+  color: $primary !important;
+  border-bottom: 2px solid #4DBF9A;
+
 }
 
 .navbar-nav > li > a > img.circle {
