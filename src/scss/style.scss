@@ -184,3 +184,21 @@ h4,
 h5 {
     font-family: $fontdefaut;
 }
+
+.assistance{
+  .inputGroupContainer{
+      padding: 1em;
+  }
+  .intro-assistance{
+      height: 20em;
+  }
+  .container{
+      height: 20em;
+  }
+}
+
+.btn-info{
+    &:hover, &:focus, &:active, &:active:focus{
+        background-color : #00b5ad;
+    }
+}
