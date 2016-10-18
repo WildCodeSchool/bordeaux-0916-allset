@@ -8,13 +8,12 @@
             $scope.carouselReferences = 0
 
             $interval(function() {
-                if ($scope.carouselReferences >= $scope.references.length - 4){
+                if ($scope.carouselReferences >= $scope.references.length - 4) {
                     $scope.carouselReferences = 0
                 } else {
                     $scope.carouselReferences++
                 }
             }, 3000)
-
             $scope.references = [{
                 name: 'Groupe Chèque Déjeuner',
                 image: 'http://www.crt.asso.fr/fileadmin/user_upload/img/UP_ChequeDejuner_2L.jpg'

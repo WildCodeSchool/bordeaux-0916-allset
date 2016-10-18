@@ -47,7 +47,7 @@
     'ui.router',
     'ngCookies',
     'ngSanitize',
-    'ngAnimate',
+    'slick',
     'angular-md5',
     'ngAnimate',
     'InlineTextEditor',
@@ -62,5 +62,5 @@
     'app.produits',
     'app.myservices',
     'app.form',
-    'app.lesapropos'
+    'app.lesapropos',
 ]))

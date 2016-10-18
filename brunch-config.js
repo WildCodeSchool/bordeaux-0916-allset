@@ -11,6 +11,7 @@ exports.config = {
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/toastr/toastr.js',
+                    'bower_components/slick-carousel/slick/slick.min.js',
                     'bower_components/rangy/*.js',
                     'bower_components/angular/angular.js',
                     'bower_components/angular-cookies/angular-cookies.js',
@@ -23,7 +24,8 @@ exports.config = {
                     'bower_components/textAngular/dist/textAngular.js',
                     'bower_components/angular-translate/angular-translate.js',
                     'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
-                    'bower_components/angular-animate/angular-animate.js'
+                    'bower_components/angular-animate/angular-animate.js',
+                    'bower_components/angular-slick/dist/slick.js'
                 ],
                 'js/app.min.js': /^src\/js/
             },
@@ -71,8 +73,21 @@ exports.config = {
             ]
         },
         copycat: {
-            "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/bootstrap/dist/css/bootstrap.min.css.map", "bower_components/angular-inline-text-editor/ite.css"],
-            "fonts": "bower_components/font-awesome/fonts",
+            "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css",
+                "bower_components/bootstrap/dist/css/bootstrap.min.css.map",
+                "bower_components/angular-inline-text-editor/ite.css",
+                "bower_components/slick-carousel/slick/slick.css",
+                "bower_components/slick-carousel/slick/slick-theme.css",
+                "bower_components/slick-carousel/slick/ajax-loader.gif"
+            ],
+            "css/fonts": ["bower_components/font-awesome/fonts",
+                "bower_components/slick-carousel/slick/fonts/slick.woff",
+                "bower_components/slick-carousel/slick/fonts/slick.ttf"
+            ],
+            "fonts": ["bower_components/font-awesome/fonts",
+                "bower_components/slick-carousel/slick/fonts/slick.woff",
+                "bower_components/slick-carousel/slick/fonts/slick.ttf"
+            ],
             verbose: true,
             onlyChanged: true
         },

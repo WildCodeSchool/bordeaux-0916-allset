@@ -6,9 +6,11 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-3 text-center" ng-repeat="reference in references | limitTo : 3 : carouselReferences">
-                <img src="{{reference.image}}" alt="{{reference.name}}" />
-            </div>
+            <slick dots="false" infinite="true" speed="300" slides-to-show="4" touch-move="true" autoplay="true" slides-to-scroll="1">
+                <div class="col-xs-3 text-center" ng-repeat="reference in references">
+                    <img src="{{reference.image}}" alt="{{reference.name}}"/>
+                </div>
+            </slick>
         </div>
     </div>
 </div>
