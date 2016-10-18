@@ -2,10 +2,10 @@
 /* intro */
 .intro {
 
-    background-image:  url('../img/introphoto1.jpeg');// url('../img/databinding.jpg');
-  //  opacity: 0.5;
+    background-image:  url('../img/introphoto1.jpeg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 40em;
 }
 
