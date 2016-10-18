@@ -8,7 +8,7 @@
                     'notre-metier': {
                         title: 'Notre Métier',
                         subtitle: 'Gestion des changements',
-                        image: 'img/drive.jpg',
+                        image: 'img/metier.jpeg',
                         texte: ` Les prestations sont adaptées aux contextes technologique et organisationnel de chaque client :
                         <ul>
                       <li>  Assistance à l'expression de besoins et rédaction de cahier des charges </li>

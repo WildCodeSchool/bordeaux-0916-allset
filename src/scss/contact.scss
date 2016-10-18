@@ -2,6 +2,14 @@
 
 #contact {
     padding: 6em 0;
+
+    i {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
 }
 
 .ng-invalid.ng-dirty {
@@ -18,7 +26,7 @@
 }
 
 .contact {
-    background: rgba(12,13,14, 0.8) url("../img/Contact.jpg");
+    background: rgba(12,13,14, 0.8); //url("../img/Contact.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
@@ -26,17 +34,16 @@
 }
 
 #contact {
-  //  font-family: andale mono;
+    //  font-family: andale mono;
     padding: 2em;
-    color: white !important;
-    //  letter-spacing: 1px;
-    background-color: rgba(12,13,14, 0.8) !important;
-    //height: 49em;
-    //  margin: -2em; // Permet une full background-color:rgba(12,13,14, 0.8)
+    //  color: white !important;
+    letter-spacing: 1px;
+    background-color: rgba(198,215,228, 0.9) !important; // rgba(12,13,14, 0.8)
+
     h2 {
-        color: rgb(40,100,180) !important;
+        color: rgb(73,117,186) !important;
         padding: 0 0 2em;
-      //  font-family: andale mono;
+        //  font-family: andale mono;
     }
 
     i {
@@ -57,7 +64,7 @@
     }
 
     a {
-        color: grey;
+        color: #7487ae;
     }
 }
 

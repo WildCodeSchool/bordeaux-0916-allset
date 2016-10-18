@@ -49,7 +49,6 @@
     'ngSanitize',
     'ngAnimate',
     'angular-md5',
-    'ngAnimate',
     'InlineTextEditor',
     'textAngular',
     'pascalprecht.translate',
