@@ -26,11 +26,11 @@
 }
 
 .contact {
-    background: rgba(12,13,14, 0.7) url("../img/Contact.jpg");
+    background: rgba(12,13,14, 0.7); //url("../img/Contact.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    //  padding: 2em;
+
 }
 
 #contact {
@@ -41,7 +41,7 @@
     background-color: rgba(198,215,228, 0.9) !important; // rgba(12,13,14, 0.8)
 
     h2 {
-        color: rgb(73,117,186) !important;
+        color: rgb(73,117,186);
         padding: 0 0 2em;
         //  font-family: andale mono;
     }
