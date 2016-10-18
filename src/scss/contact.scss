@@ -34,14 +34,14 @@
 }
 
 #contact {
-    //  font-family: andale mono;
+    color: $white;
     padding: 2em;
     //  color: white !important;
     letter-spacing: 1px;
-    background-color: rgba(198,215,228, 0.9) !important; // rgba(12,13,14, 0.8)
+    background-color: rgb(73,117,186) !important; // rgba(12,13,14, 0.8)
 
     h2 {
-        color: rgb(73,117,186);
+
         padding: 0 0 2em;
         //  font-family: andale mono;
     }
@@ -53,10 +53,7 @@
     p {
         line-height: 200%;
         font-size: 14px;
-    }
 
-    li {
-        line-height: 170%;
     }
 
     .service {
@@ -64,7 +61,7 @@
     }
 
     a {
-        color: #7487ae;
+        color: $white; //#7487ae;
     }
 }
 
