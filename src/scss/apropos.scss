@@ -6,20 +6,22 @@
     h1,
     h4 {
         text-align: center;
-        color: black !important;
+        color: rgb(73,117,186);
     }
 
     p {
         padding: 2em 0 0;
     }
 }
-
+#testi {
+  padding:0;
+}
 #commune {
 
     font-size: 20px;
     padding: 0 0 6em ;
 
-    
+
     .block {
       margin: 6em auto;
       width: 700px;
@@ -45,7 +47,7 @@
     img {
 
       padding-top: 5em;
-      height: 25em;
+      height: 35em;
       width: 100%;
       background-repeat: no-repeat;
       background-size: contain;

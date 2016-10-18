@@ -27,12 +27,12 @@
 
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-    color: $primary !important;
-    border-bottom: 2px solid #4DBF9A;
+    color: #31b0d5 !important;
+    border-bottom: 2px solid #31b0d5;
 }
 
 .navbar-nav > .selected:not(:first-child):not(:last-child) > a {
-  color: $primary !important;
+  color: #31b0d5 !important;
   border-bottom: 2px solid #4DBF9A;
 
 }
