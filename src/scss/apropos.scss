@@ -2,15 +2,18 @@
 
 #aproposhome {
     padding: 0 0 6em;
-
+  //  background-color: rgb(198,215,228);
     h1,
     h4 {
         text-align: center;
-        color: rgb(73,117,186);
+        color: rgb(3,34,48);
     }
 
     p {
         padding: 2em 0 0;
+    }
+    .btn {
+      background: rgb(6, 67, 96) !important;
     }
 }
 #testi {
