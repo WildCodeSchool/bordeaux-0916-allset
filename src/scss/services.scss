@@ -1,7 +1,7 @@
 @import 'colors';
 
-.intro{
-  height: 400px;
+.intro {
+    height: 400px;
 }
 
 .services {
@@ -24,9 +24,22 @@
     z-index: -1;
 }
 
-.myservice{
+.myservice {
+
+    background-repeat: no-repeat !important;
     background-color: white;
-    height: 100%;
+    padding: 30px;
+
+    h1{
+        color: white;
+        padding: 15%;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .container{
+        background-color: white;
+    }
+
     .img-container {
         height: 25em;
     }
@@ -34,10 +47,11 @@
     .text-article {
         width: 700px;
         margin: 5% auto;
-        p{
+
+        p {
             text-align: justify;
             font-size: 20px;
+                font-weight: 300;
         }
-
     }
 }
