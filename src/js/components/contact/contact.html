@@ -1,81 +1,83 @@
-
 <div class="container" id="containerContactForm">
-  <h1 class="text-center">Contactez Nous!</h1>
 
-    <form class="form-horizontal col-md-12" name="form" action="mailto:vivien.prog@gmail.com" method="post" novalidate>
+    <h1 class="text-center">Contactez Nous!</h1>
+    <div>
+        <form name="contactForm" class="form-horizontal col-md-12" ng-submit="$ctrl.saveUser()" novalidate>
 
-        <section class="row col-md-5">
-          
-            <div class="form-group">
-                <div class="inputGroupContainer col-md-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
-                        <input name="nom" placeholder="Nom" class="form-control" type="text">
+            <section class="row col-md-5">
+
+                <div class="form-group">
+                    <div class="inputGroupContainer col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
+                            <input name="nom" placeholder="Nom" class="form-control" type="text" ng-model="$ctrl.contactInfo.nom" required>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <div class="inputGroupContainer col-md-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
-                        <input name="prenom" placeholder="Prénom" class="form-control" type="text">
+                <div class="form-group">
+                    <div class="inputGroupContainer col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
+                            <input name="prenom" placeholder="Prénom" class="form-control" type="text" ng-model="$ctrl.contactInfo.prenom">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <div class="inputGroupContainer col-md-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-envelope bigicon"></i></span>
-                        <input name="email" placeholder="E-Mail" class="form-control" type="email">
+                <div class="form-group">
+                    <div class="inputGroupContainer col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope bigicon"></i></span>
+                            <input name="email" placeholder="E-Mail" class="form-control" type="email" ng-model="$ctrl.contactInfo.email">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <div class="inputGroupContainer col-md-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-phone bigicon"></i></span>
-                        <input name="telephone" placeholder="Téléphone" class="form-control" type="text" >
+                <div class="form-group">
+                    <div class="inputGroupContainer col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-phone bigicon"></i></span>
+                            <input name="telephone" placeholder="Téléphone" class="form-control" type="text" ng-model="$ctrl.contactInfo.telephone">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-12" id="selectReasonToContact">
-                <select class="col-md-12" name="selectReasonToContact">
-                <option value="Sujet pour lequel vous nous contactez">Sujet pour lequel vous nous contactez</option>
-                <option value="Investisseur">Investisseur</option>
-                <option value="Recrutement">Recrutement</option>
-                <option value="Demande d'informations">Demande d'informations</option>
-                <option value="Demande technique">Demande technique</option>
-                <option value="Autre">Autre</option>
-            </select>
-            </div>
+                <div class="col-md-12" id="selectReasonToContact">
+                    <select class="col-md-12" ng-model="$ctrl.contactInfo.sujet" name="sujet">
+                      <option value="Sujet pour lequel vous nous contactez" selected>Sujet pour lequel vous nous contactez</option>
+                      <option value="Investisseur">Investisseur</option>
+                      <option value="Recrutement">Recrutement</option>
+                      <option value="Demande d'informations">Demande d'informations</option>
+                      <option value="Demande technique">Demande technique</option>
+                      <option value="Autre">Autre</option>
+                  </select>
+                </div>
 
-        </section>
+            </section>
 
-        <section class="row col-md-7">
+            <section class="row col-md-7">
 
-            <div class="form-group" id="containerRight">
-                <div class="inputGroupContainer col-md-offset-1 .col-md-11">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-pencil bigicon"></i></span>
-                        <textarea class="form-control col-md-10" name="message" placeholder="Message" rows="10"></textarea>
+                <div class="form-group" id="containerRight">
+                    <div class="inputGroupContainer col-md-offset-1 .col-md-11">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-pencil bigicon"></i></span>
+                            <textarea class="form-control col-md-10" name="message" placeholder="Message" rows="10" ng-model="$ctrl.contactInfo.message"></textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
+            </section>
 
-        <section class="row col-md-12 col-sm-12 col-xs-12">
+            <section class="row col-md-12 col-sm-12 col-xs-12">
 
-            <div class="form-group col-md-12 col-sm-12 col-xs-12" id="button">
-                <label class="control-label"></label>
-                <button type="reset" class="btn btn-warning col-md-offset-5 col-sm-offset-5 col-xs-offset-5">Envoyer <span class="fa fa-send bigicon"></span></button>
-            </div>
+                <div class="form-group col-md-12 col-sm-12 col-xs-12" id="button">
+                    <label class="control-label"></label>
+                    <button type="submit" class="btn btn-warning col-md-offset-5 col-sm-offset-5 col-xs-offset-5">Envoyer <span class="fa fa-send bigicon"></span></button>
+                </div>
 
-        </section>
+    </div>
+
+    </section>
 
     </form>
 
