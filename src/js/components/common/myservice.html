@@ -1,12 +1,12 @@
-<div class="myservice">
+<div class="myservice" style="background: url({{$ctrl.selectedService.image}})">
+    <h1 class="intro-title text-center" ng-bind-html="$ctrl.selectedService.title"></h1>
     <div class="container">
-        <h1 class="intro-title text-center" ng-bind-html="$ctrl.selectedService.title"></h1>
         <br />
         <p class="subtitle text text-article" ng-bind-html="$ctrl.selectedService.subtitle" class="text-left"></p>
+        <div class="text-article">
+            <p ng-bind-html="$ctrl.selectedService.texte" class="text-left"></p>
+        </div>
     </div>
-    <div class="img-container" style="background: url({{$ctrl.selectedService.image}})"></div>
-    <br />
-    <div class="container text-article">
-        <p ng-bind-html="$ctrl.selectedService.texte" class="text-left"></p>
-    </div>
+
+
 </div>
