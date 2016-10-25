@@ -18,13 +18,12 @@
 }
 
 .bta {
-  background-color: $primary;
+    background-color: $primary;
 }
+
 .bta:hover {
-  background-color: $white;
-
+    background-color: $white;
 }
-
 
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
@@ -33,9 +32,8 @@
 }
 
 .navbar-nav > .selected:not(:first-child):not(:last-child) > a {
-  color: #31b0d5 !important;
-  border-bottom: 2px solid #31b0d5;
-
+    color: #31b0d5 !important;
+    border-bottom: 2px solid #31b0d5;
 }
 
 .navbar-nav > li > a > img.circle {
@@ -63,18 +61,6 @@ button.navbar-toggle:hover > .icon-bar {
     border-color: $white;
 }
 
-.mininavbar {
-    background-color: $footer;
-    color: $white;
-    font-size: 12px;
-    padding-top: 3px;
-
-    .btn-info {
-        background-color: $button;
-        padding: 0 15px;
-    }
-}
-
 #fixed-bottom {
     bottom: 0;
     right: 3px;
@@ -85,5 +71,21 @@ button.navbar-toggle:hover > .icon-bar {
         padding: 10px 20px;
         font-size: 18px;
         background-color: $button;
+    }
+}
+
+#mininavbar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    color: white;
+    background-color: rgba(40, 96, 144, 0.41);
+    padding: 10px;
+
+    .fa {
+        color: white;
+        font-size: 45px;
+        width: 45px;
+        height: 45px;
     }
 }
