@@ -8,6 +8,13 @@
     min-height: 400px;
     display: block;
     position: relative;
+    padding: 30px;
+
+    h1,
+    h4 {
+        text-align: center;
+        color: #032230;
+    }
 }
 
 .services::after {
@@ -25,18 +32,17 @@
 }
 
 .myservice {
-
     background-repeat: no-repeat !important;
     background-color: white;
     padding: 30px;
 
-    h1{
+    h1 {
         color: white;
         padding: 15%;
         text-shadow: 1px 1px 5px black;
     }
 
-    .container{
+    .container {
         background-color: white;
     }
 
@@ -51,10 +57,7 @@
         p {
             text-align: justify;
             font-size: 20px;
-                font-weight: 300;
+            font-weight: 300;
         }
     }
-
-
-
 }
