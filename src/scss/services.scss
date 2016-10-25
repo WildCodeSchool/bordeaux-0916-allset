@@ -9,38 +9,36 @@
     display: block;
     position: relative;
     padding: 30px;
-    background: url("../img/databinding.jpg");
-    background-size: cover;
-    background-position: center;
 
     h1,
     h4 {
         text-align: center;
-        color: $white;
+        color: #032230;
     }
 }
-// .services::after {
-//     content: "";
-//     background: url("../img/databinding.jpg");
-//     background-size: cover;
-//     background-position: center;
-//     opacity: 0.65;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     position: absolute;
-//     z-index: -1;
-// }
+
+.services::after {
+    content: "";
+    background: url("../img/data-center.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.65;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 
 .myservice {
     background-repeat: no-repeat !important;
-    background-size: contain !important;
+    background-color: white;
     padding: 30px;
 
     h1 {
         color: white;
-        padding: 2em;
+        padding: 15%;
         text-shadow: 1px 1px 5px black;
     }
 
