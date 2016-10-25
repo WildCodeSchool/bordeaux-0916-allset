@@ -1,16 +1,20 @@
-# TINY-MEAN-CMS
+# ALLSET // w/ Tiny-mean-cms
 
 [![Licence](https://img.shields.io/badge/licence-MIT-blue.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/blob/master/LICENCE) [![Release](https://img.shields.io/github/release/jbehuet/tiny-mean-cms.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/releases)
 [![GitHub forks](https://img.shields.io/github/forks/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/network) [![GitHub issues](https://img.shields.io/github/issues/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/issues)
 
-CMS Project with [MEAN stack](http://mean.io/#!/)
+Tiny-mean-cms : CMS Project with [MEAN stack](http://mean.io/#!/)
 
-### Previews
+### Context
+
+Refonte du site ALLSET.
+
+<!-- ### Previews
 | Home   |      Edition      | Dashboard |
 |:----------:|:-------------:|:------:|
 | <img src="http://jbehuet.fr/files/screens/mean-starter/001.png" width="400px" />   |  <img src="http://jbehuet.fr/files/screens/mean-starter/002.png" width="400px" />   | <img src="http://jbehuet.fr/files/screens/mean-starter/003.png" width="400px" /> |
 
-[Show demo](http://tiny-mean-cms.herokuapp.com/#/)
+[Show demo](http://tiny-mean-cms.herokuapp.com/#/) -->
 
 ### Prerequisites
 * [NodeJS](https://nodejs.org/en/)
@@ -21,8 +25,8 @@ CMS Project with [MEAN stack](http://mean.io/#!/)
 ### Installation
 
 ```bash
-git clone https://github.com/jbehuet/tiny-mean-cms.git   
-cd tiny-mean-cms
+git clone https://github.com/WildCodeSchool/bordeaux-0916-allset.git   
+cd bordeaux-0916-allset
 bower i
 npm i
 ```
@@ -39,14 +43,19 @@ __Default account__
 
 `npm start`
 
-### Contributing
+### Git Workflow
 
 1. Fork it!
 2. Create your feature branch: git checkout -b my-new-feature
 3. Commit your changes: git commit -am 'Add some feature'
-4. Push to the branch: git push origin my-new-feature
+4. Git checkout dev
+5. Git pull origin dev
+6. Git merge my-new-feature
+4. Git push origin dev
 5. Submit a pull request
 
 ### Licence
 
 This project is licensed under the MIT Open Source license. For more information, see the LICENSE file in this repository.
+
+Thanks to @jbehuet and the WildCodeSchool

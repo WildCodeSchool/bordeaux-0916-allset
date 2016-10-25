@@ -19,7 +19,7 @@ mongoose.connect(ENV.db, (err) => {
                 if (users.length === 0) {
                     userModel.create({
                         email: "admin@domain.ext",
-                        password: "21232f297a57a5a743894a0e4a801fc3",
+                        password: "admin",
                         isAdmin: true
                     }, (err, user) => {
                         if (!err) {
