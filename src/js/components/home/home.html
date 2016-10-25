@@ -1,3 +1,4 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <section>
     <div class="intro">
         <div class="container text-center">
@@ -11,16 +12,16 @@
     </div>
 </section>
 
-<section>
-    <apropo></apropo>
-</section>
+<!-- <section>
+    <apropo edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.apropo"></apropo>
+</section> -->
 
-<section>
+<!-- <section>
     <services></services>
     <hr/>
-</section>
+</section> -->
 
-<section class="engagement">
+<!-- <section class="engagement">
 <div class="container">
     <div class="row">
 
@@ -30,9 +31,9 @@
         </div>
 
         <div class="col-sm-6">
-            <h3><i class="fa fa-circle-o" aria-hidden="true"></i> Engagements </h3>
-            <p> AllSet s'attache à conduire ses projets suivant une méthodologie rigoureusement élaborée en concertation avec toutes nos équipes. Nous nous engageons sur une qualité de services et de compétences pour la réussite de votre projet. Dans un souci
-                constant d'éthique et de transparence, notre démarche s'attache à prendre en compte autant les enjeux humains que financiers et techniques, dans le respect des délais et contraintes de nos clients.
+            <h3><i class="fa fa-circle-o" aria-hidden="true"></i><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"> {{$ctrl.page.content.title}}</span></h3>
+            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.p">
+              {{$ctrl.page.content.p}}
             </p>
 
         </div>
@@ -40,7 +41,7 @@
     </div>
 </div>
 
-</section>
+</section> -->
 
 <section>
     <references></references>

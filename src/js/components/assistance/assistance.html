@@ -16,7 +16,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user bigicon"></i>
                             </span>
-                            <input name="nom" placeholder="Nom" class="form-control" type="text">
+                            <input name="nom" placeholder="Nom" ng-model="$ctrl.user.email" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -26,12 +26,12 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
                             </span>
-                            <input name="password" placeholder="Mot de Passe" class="form-control" type="password">
+                            <input name="password" placeholder="Mot de Passe" ng-model="$ctrl.user.password" class="form-control" type="password">
                         </div>
                     </div>
                 </div>
                 <div class="text-center">
-                    <button class="btn">Se Connecter
+                    <button class="btn" ng-click="$ctrl.connect()">Se Connecter
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </button>
                 </div>

@@ -1,10 +1,10 @@
 <div class="container" id="aproposhome">
     <div class="apropos" id="apropos">
-        <h1> QUI SOMMES NOUS  </h1>
+        <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.title"> {{$ctrl.ngModel.title}} </h1>
         <div class="row">
             <div class="col-xs-12 col-sm-4">
 
-                <h4><i class="fa fa-database" aria-hidden="true"></i> Notre Métier </h4>
+                <h4><i class="fa fa-database" aria-hidden="true"></i> <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card1.title">{{$ctrl.ngModel.card1.title}}</span></h4>
                 <p> Spécialiste des systèmes et réseaux, AllSet vous accompagne dans la
                    gestion des changements et dans la gestion d'exploitation de votre système d'information. </p>
                 <!-- <button ui-sref="app.lesapropos({ lesaproposUrl: 'notre-metier' })" class="btn btn-default center-block"> Consulter </button> -->

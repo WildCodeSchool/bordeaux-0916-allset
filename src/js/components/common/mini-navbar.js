@@ -1,19 +1,39 @@
 ((app) => {
     'use strict'
     app.component("mininavbar", {
+        bindings: {
+            editMode: '=',
+            ngModel: '='
+        },
         templateUrl: 'js/components/common/mini-navbar.html',
-        controller: function($scope, $location, $anchorScroll) {
-      $scope.gotoBottom = function() {
-        // set the location.hash to the id of
-        // the element you wish to scroll to.
-        $location.hash('fixed-bottom');
+        controller: function(PageService, UserService) {
+            angular.extend(this, {
+                initialData: null,
+                $onInit() {
+                  UserService.getCurrent().then((user) => {
+                        this.user = user
+                    }).catch((err) => {
 
-        // call $anchorScroll()
-        $anchorScroll();
-      }
-    }
-}) //(window.angular);
+                    })
 
+                    PageService.get(this.ngModel.name).then((res) => {
+                        if (res.data.content)
+                            res.data.content = JSON.parse(res.data.content)
+                        this.ngModel = res.data
 
-
+                        this.initialData = this.ngModel
+                    })
+                },
+                save() {
+                    PageService.save(Object.create(this.ngModel)).then((res) => {
+                        this.editMode = false
+                    })
+                },
+                cancel() {
+                    this.editMode = false
+                    this.ngModel = this.initialData
+                }
+            })
+        }
+    })
 })(angular.module('app.common'))
