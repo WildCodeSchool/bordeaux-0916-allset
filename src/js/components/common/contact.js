@@ -3,13 +3,13 @@
     var cities = [
     {
         city : 'Mérignac',
-        desc : '25 RUE MARCEL ISSARTIER - 33700 MERIGNAC',
+        desc : `25 RUE MARCEL ISSARTIER <br> 33700 MERIGNAC`,
         lat : 44.84007510000001,
         long : -0.7161892999999964
     },
     {
         city : 'Paris',
-        desc : '460 VOIE DE LA COURTINE - 93160 NOISY LE GRAND',
+        desc : `460 VOIE DE LA COURTINE <br> 93160 NOISY LE GRAND`,
         lat : 48.8388763,
         long : 2.5435062000000244
     },

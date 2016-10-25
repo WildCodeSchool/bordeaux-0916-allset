@@ -134,3 +134,16 @@ h1 {
     border-color: #4975BA;
     color: #4975BA !important;
 }
+
+#map {
+    .infoWindowContent,
+    h2,
+    p {
+        color: black;
+        padding: 0.3em 0;
+        margin: 10px;
+    }
+    .infoWindowContent{
+        text-align: right;
+    }
+}
