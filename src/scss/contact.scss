@@ -30,7 +30,6 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-
 }
 
 #contact {
@@ -41,7 +40,6 @@
     background-color: rgb(73,117,186) !important; // rgba(12,13,14, 0.8)
 
     h2 {
-
         padding: 0 0 2em;
         //  font-family: andale mono;
     }
@@ -53,7 +51,6 @@
     p {
         line-height: 200%;
         font-size: 14px;
-
     }
 
     .service {
@@ -99,8 +96,8 @@ a {
 }
 
 h1 {
-    color: #00b5ad;
-    padding-top: 15px;
+    color: #4975BA;
+    padding-top: 35px;
     padding-bottom: 30px;
 }
 
@@ -125,4 +122,14 @@ h1 {
 .input-group-addon {
     border-radius: 0;
     border: 0 solid #ccc;
+}
+
+#btn {
+    background-color: #4975BA;
+    position: absolute;
+}
+
+#btn:hover {
+    background-color: #FFF;
+    color: #4975BA;
 }
