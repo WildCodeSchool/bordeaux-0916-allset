@@ -1,52 +1,119 @@
 <div class="services">
     <div class="container text-center">
-        <h1 >
-            QUE FAISONS NOUS ?
-        </h1>
-        <h4>
-            Découvrez nos Services et Solutions
-        </h4>
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.title">
+                    {{$ctrl.ngModel.title}}
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 subtitle">
+                <h4 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.subtitle">
+                    {{$ctrl.ngModel.subtitle}}
+                </h4>
+            </div>
+        </div>
+
     </div>
 </div>
 <div class="container">
     <div class="row concepts">
-        <a ui-sref="app.myservices({ myserviceUrl: 'allset-cabling-and-security' })">
-            <div class="col-sm-4">
-                <div class="text-center card">
-                    <div class="icon"><i class="fa fa-shield"></i></div>
-                    <h4>Allset Cabling And Security</h4>
-                    <p class="text-justify">Système de sécurité, Cablage électrique, Maintenance préventive</p>
+
+        <div class="col-sm-4">
+            <div class="text-center card">
+                <div>
+                    <div class="icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
                 </div>
-            </div>
-        </a>
-        <a ui-sref="app.myservices({ myserviceUrl: 'allset-integrateur-de-service' })">
-            <div class="col-sm-4">
-                <div class="text-center card">
-                    <div class="icon"><i class="fa fa-bolt"></i></div>
-                    <h4>Allset Integrateur de Service</h4>
-                    <p class="text-justify">Lan entreprise, Sécurité, Sauvegarde système, Poste de travail, Transfert informatique</p>
+                <div>
+                    <h4 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card1.title">
+                        {{$ctrl.ngModel.card1.title}}
+                    </h4>
                 </div>
-            </div>
-        </a>
-        <a ui-sref="app.myservices({ myserviceUrl: 'allset-telecom-et-hebergement' })">
-            <div class="col-sm-4">
-                <div class="text-center card">
-                    <div class="icon"><i class="fa fa-database"></i></div>
-                    <h4>Allset Telecom et Hebergement</h4>
-                    <p class="text-justify">WAN, Téléphonie, Telecom abonnement, Fibre, Solutions hébergés, serveur, Service Cloud</p>
+                <div>
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card1.text">
+                        {{$ctrl.ngModel.card1.text}}
+                    </p>
                 </div>
+                <button ui-sref="app.myservices({ myserviceUrl: 'allset-cabling-and-security' })" class="btn center-block">
+                    En Savoir Plus<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </button>
             </div>
-        </a>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="text-center card">
+                <div>
+                    <div class="icon">
+                        <i class="fa fa-bolt"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card2.title">
+                        {{$ctrl.ngModel.card2.title}}
+                    </h4>
+                </div>
+                <div>
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card2.text">
+                        {{$ctrl.ngModel.card2.text}}
+                    </p>
+                </div>
+                <button ui-sref="app.myservices({ myserviceUrl: 'allset-integrateur-de-service' })" class="btn center-block">
+                    En Savoir Plus
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="text-center card">
+                <div>
+                    <div class="icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card3.title">
+                        {{$ctrl.ngModel.card3.title}}
+                    </h4>
+                </div>
+                <div>
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card3.text">
+                        {{$ctrl.ngModel.card3.text}}
+                    </p>
+                </div>
+                <button ui-sref="app.myservices({ myserviceUrl: 'allset-telecom-et-hebergement' })" class="btn center-block">
+                    En Savoir Plus
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
     </div>
     <div class="row concepts">
-        <a ui-sref="app.myservices({ myserviceUrl: 'urban-service-network' })">
-            <div class="col-sm-4 col-sm-offset-4">
-                <div class="text-center card">
-                    <div class="icon"><i class="fa fa-lightbulb-o"></i></div>
-                    <h4>Urban Service Network</h4>
-                    <p class="text-justify">Li-Fi</p>
+        <div class="col-sm-4 col-sm-offset-4">
+            <div class="text-center card">
+                <div>
+                    <div class="icon">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </div>
                 </div>
+                <div>
+                    <h4 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card4.title">
+                        {{$ctrl.ngModel.card4.title}}
+                    </h4>
+                </div>
+                <div>
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card4.text">
+                        {{$ctrl.ngModel.card4.text}}
+                    </p>
+                </div>
+                <button ui-sref="app.myservices({ myserviceUrl: 'urban-service-network' })" class="btn center-block">
+                    En Savoir Plus
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </button>
             </div>
-        </a>
+        </div>
     </div>
 </div>

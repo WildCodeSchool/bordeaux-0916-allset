@@ -4,7 +4,7 @@
         <div class="container text-center">
             <h1 class="intro-title">
 
-              <img src="img/logo-allset.png">
+                <img src="img/logo-allset.png">
 
             </h1>
             <!-- <p class="subtitle text">Unleash Your Data</p> -->
@@ -17,36 +17,18 @@
 </section>
 
 <section>
-    <services></services>
+    <services edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.services"></services>
     <hr/>
 </section>
 
-<section class="engagement">
-<div class="container">
-    <div class="row">
-
-
-        <div class="col-sm-6 enga">
-            <img src="../img/engagement1.jpg" class="img-responsive" alt="">
-        </div>
-
-        <div class="col-sm-6">
-            <h3><i class="fa fa-circle-o" aria-hidden="true"></i><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"> {{$ctrl.page.content.title}}</span></h3>
-            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.p">
-              {{$ctrl.page.content.p}}
-            </p>
-
-        </div>
-
-    </div>
-</div>
-
+<section>
+    <engagement edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.engagement"></engagement>
 </section>
 
 <section>
-    <references></references>
+    <references edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.references"></references>
 </section>
 
 <section class="contact">
-    <contact> </contact>
+    <contact edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.contact"></contact>
 </section>

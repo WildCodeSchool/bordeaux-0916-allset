@@ -77,10 +77,11 @@ button.navbar-toggle:hover > .icon-bar {
 #mininavbar {
     position: fixed;
     top: 60px;
-    left: 0;
+    right: 0;
     color: white;
     background-color: rgba(40, 96, 144, 0.41);
     padding: 10px;
+    z-index: 99999999;
 
     .fa {
         color: white;

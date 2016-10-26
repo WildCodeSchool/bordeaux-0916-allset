@@ -1,10 +1,11 @@
 ((app) => {
     'use strict'
-    app.component("services", {
+
+    app.component("engagement", {
       bindings:{
         editMode:"<",
         ngModel:"="
       },
-        templateUrl: 'js/components/common/services.html'
-    })
+        templateUrl: 'js/components/common/engagement.html',
+      })
 })(angular.module('app.common'))
