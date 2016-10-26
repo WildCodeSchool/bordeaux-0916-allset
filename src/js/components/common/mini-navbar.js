@@ -25,7 +25,7 @@
                     })
                 },
                 save() {
-                    PageService.save(Object.create(this.ngModel)).then((res) => {
+                    PageService.save(Object.assign({}, this.ngModel)).then((res) => {
                         this.editMode = false
                     })
                 },

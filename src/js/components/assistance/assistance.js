@@ -5,7 +5,7 @@
         controller: function(UserService){
           angular.extend(this,{
             connect(){
-              debugger
+              
               UserService.connect(this.user).then((res) => {
                 //OK
               }).catch(() => {
