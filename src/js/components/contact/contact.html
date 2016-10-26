@@ -1,3 +1,4 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <div class="container" id="containerContactForm">
 
     <h1 class="text-center">Contactez Nous!</h1>
@@ -77,5 +78,5 @@
 </div>
 
 <section class="contact">
-    <contact></contact>
+    <contact edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.contact"></contact>
 </section>

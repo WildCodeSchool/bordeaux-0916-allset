@@ -188,7 +188,7 @@ h5 {
 
 h1 {
     padding-bottom: 2em !important;
-        display: block !important;
+    display: block !important;
 }
 
 .assistance {
@@ -197,11 +197,11 @@ h1 {
     }
 
     .intro-assistance {
-        height: 20em;
+        height: 15em;
     }
 
     .container {
-        height: 23em;
+        height: 28em;
     }
 }
 
@@ -218,6 +218,6 @@ h1 {
     padding-top: 4em;
 }
 
-[inline-text-editor] {
-    display: inline;
+.inline{
+    display: inline-block;
 }

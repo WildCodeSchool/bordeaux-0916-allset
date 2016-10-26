@@ -1,3 +1,4 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <section class="assistance">
     <div class="intro-assistance">
         <div class="container text-center">
@@ -7,16 +8,27 @@
         </div>
     </div>
     <div class="container">
+        <div class="espassistance row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p class="subtitle text-center">J'ai besoin d'une assitance</p>
+                <div class="inputGroupContainer text-center">
+                    <button class="btn">Accéder à l'assistance
+                        <i class="fa fa-laptop fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr />
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <p class="subtitle text text-center">J'accède à mon Espace Client</p>
+                <p class="subtitle text text-center">J'accède à mon Espace</p>
                 <div class="form-group">
                     <div class="inputGroupContainer col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="fa fa-user bigicon"></i>
                             </span>
-                            <input name="nom" placeholder="Nom" ng-model="$ctrl.user.email" class="form-control" type="text">
+                            <input name="email" placeholder="Email" ng-model="$ctrl.user.email" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -36,19 +48,9 @@
                     </button>
                 </div>
             </div>
-          </div>
-          <div class="espassistance row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <p class="subtitle text-center">J'ai besoin d'une assitance</p>
-                <div class="inputGroupContainer text-center">
-                    <button class="btn">Accéder à l'assistance
-                        <i class="fa fa-laptop fa-lg"></i>
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 <section class="assistance">
-    <contact></contact>
+    <contact edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.contact"></contact>
 </section>

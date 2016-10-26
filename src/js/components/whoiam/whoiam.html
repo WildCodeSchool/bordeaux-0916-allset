@@ -1,11 +1,12 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <div id="whoiam">
     <section>
-        <apropo></apropo>
+        <apropo edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.apropo"></apropo>
     </section>
     <section>
-        <engagement></engagement>
+        <engagement edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.engagement"></engagement>
     </section>
     <section class="contact">
-        <contact></contact>
+        <contact edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.contact"></contact>
     </section>
 </div>
