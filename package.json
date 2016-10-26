@@ -24,6 +24,7 @@
     "copycat-brunch": "^1.1.0",
     "css-brunch": "^2.6.1",
     "express": "^4.13.3",
+    "imageoptmizer-brunch": "0.0.6",
     "javascript-brunch": "^2.0.0",
     "json-concat-brunch": "^1.1.0",
     "jsonwebtoken": "^5.7.0",
