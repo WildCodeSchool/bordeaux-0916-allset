@@ -36,7 +36,7 @@
                                     <br>- Poste de travail
                                     <br>- Transfert informatique</p>
                                     `,
-                        image: 'img/drive.jpg',
+                        image: 'img/databinding.jpg',
                         texte: `<p>AllSet est intégrateur à valeur ajoutée dans le domaine de la convergence et de la téléphonie sur IP.
                                 Déployer une solution ToIP présente une certaine complexité et des risques, par conséquent la planification,
                                 l'ingénierie, la sélection du ou des fournisseurs et les conditions de la mise en oeuvre déterminent pour une
@@ -60,7 +60,7 @@
                                     <br>- Fibre
                                     <br>- Solutions hébergés, serveur, Service Cloud</p>
                                     `,
-                        image: 'img/drive.jpg',
+                        image: 'img/datacenter.jpg',
                         texte: `<p>AllSet est intégrateur à valeur ajoutée dans le domaine de la convergence et de la téléphonie sur IP.
                                 Déployer une solution ToIP présente une certaine complexité et des risques, par conséquent la planification,
                                 l'ingénierie, la sélection du ou des fournisseurs et les conditions de la mise en oeuvre déterminent pour une
@@ -79,7 +79,7 @@
                     'urban-service-network': {
                         title: 'Urban Service Network',
                         subtitle: '<p>Li-Fi</p>',
-                        image: 'img/drive.jpg',
+                        image: 'img/lifi.jpg',
                         texte: `<p>AllSet est intégrateur à valeur ajoutée dans le domaine de la convergence et de la téléphonie sur IP.
                                 Déployer une solution ToIP présente une certaine complexité et des risques, par conséquent la planification,
                                 l'ingénierie, la sélection du ou des fournisseurs et les conditions de la mise en oeuvre déterminent pour une

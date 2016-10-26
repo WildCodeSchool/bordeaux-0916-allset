@@ -19,10 +19,10 @@
 
 .services::after {
     content: "";
-    background: url("../img/agree.jpg");
+    background: url("../img/data-center.jpg");
     background-size: cover;
     background-position: center;
-    //opacity: 0.65;
+    opacity: 0.65;
     top: 0;
     left: 0;
     bottom: 0;
@@ -38,7 +38,7 @@
 
     h1 {
         color: white;
-
+        padding: 10%;
         text-shadow: 1px 1px 5px black;
     }
 
