@@ -7,11 +7,11 @@
             <div class="col-sm-6">
                 <h3>
                     <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.engagement.title">
-                        {{$ctrl.page.engagement.title}}</span>
+                    <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.engagement.title">
+                        {{$ctrl.ngModel.engagement.title}}</span>
                 </h3>
-                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.engagement.text">
-                    {{$ctrl.page.engagement.text}}
+                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.engagement.text">
+                    {{$ctrl.ngModel.engagement.text}}
                 </p>
             </div>
         </div>
