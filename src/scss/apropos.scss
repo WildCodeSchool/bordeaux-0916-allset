@@ -12,9 +12,7 @@
     p {
         padding: 2em 0 0;
     }
-    .btn {
-      background: rgb(6, 67, 96) !important;
-    }
+
 }
 #testi {
   padding:0;
@@ -50,9 +48,10 @@
     img {
 
       padding-top: 5em;
-      height: 35em;
+      height: 30em;
       width: 100%;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
+      background-position: left;
     }
 }

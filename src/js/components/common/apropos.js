@@ -27,7 +27,7 @@
                     'nos-demarches': {
                         title: 'Nos démarches',
                         subtitle: `Les prestations proposées s'adaptent aux besoins de chaque client`,
-                        image: 'img/drive.jpg',
+                        image: 'img/agree.jpg',
                         texte:
                         `
                         <ul>
@@ -56,7 +56,7 @@
                     'notre-organisation': {
                         title: 'Notre Organisation',
                         subtitle: '',
-                        image: 'img/drive.jpg',
+                        image: 'img/organisation.jpeg',
                         texte: `Les Fondateur de notre société, AllSet, bénéficient de plus de 20 ans d'experience cumulée en gestion et en réalisation de projets informatiques.<br> Ils ont établis des partenariats avec différents acteurs du marché.
                           <br>Notre société dispose d'une structure independante de tout constructeur ou éditeur , d'une présence nationnale et d'un rayon d'action international.
                           <br>Le centre de formation de AllSet est un centre agrée.

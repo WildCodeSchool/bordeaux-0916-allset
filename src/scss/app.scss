@@ -1,20 +1,13 @@
 @import 'colors';
-/* container */
-// app > .container {
-//     padding-bottom: 60px;
-// }
-/* footer */
+
 footer {
     background-color: rgb(210,219,227);
     text-align: center;
-    bottom: 0;
-  //  color: $white !important;
 }
 
 .footer {
   color: #7487ae !important;
     p {
-
         margin-top: 0.8em !important;
         @media (min-width: 768px) {
             border-right: 1px solid #7487ae;
@@ -25,10 +18,9 @@ footer {
     a {
         color: #7487ae !important;
     }
-    
+
     .btn {
-      //  background-color: ;
-        margin-top: 0.3em !important;
+        margin-top: 0.3em;
         color: $white !important;
     }
 }

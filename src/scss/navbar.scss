@@ -12,22 +12,16 @@
     line-height: 30px;
 }
 
-.btn {
-    color: $white !important;
-    // background-color: $button !important;  //m^ coleur que le btn footer
-}
-
 .bta {
-    background-color: $primary;
-}
-
-.bta:hover {
-    background-color: $white;
+    padding: 10px 20px;
+    color: $white !important;
+    background-color: #31b0d5;
 }
 
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-    color: #31b0d5 !important;
+    background-color: $white;
+    color: #31b0d5;
     border-bottom: 2px solid #31b0d5;
 }
 
@@ -66,12 +60,6 @@ button.navbar-toggle:hover > .icon-bar {
     right: 3px;
     position: fixed;
     z-index: 9999999;
-
-    .btn-info {
-        padding: 10px 20px;
-        font-size: 18px;
-        background-color: $button;
-    }
 }
 
 #mininavbar {
