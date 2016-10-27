@@ -2,18 +2,15 @@
 <section class="assistance">
     <div class="intro-assistance">
         <div class="container text-center">
-            <h1 class="intro-title">
-                Assistance
-            </h1>
+          <h1 class="intro-title text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancetitle"></h1>
         </div>
     </div>
     <div class="container">
         <div class="espassistance row">
             <div class="col-sm-6 col-sm-offset-3">
-                <p class="subtitle text-center">J'ai besoin d'une assitance</p>
+                <p class="subtitle text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistance"></p>
                 <div class="inputGroupContainer text-center">
-                    <button class="btn">Accéder à l'assistance
-                        <i class="fa fa-laptop fa-lg"></i>
+                    <button class="btn"><div class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancebutton"></div><i class="fa fa-laptop fa-lg"></i>
                     </button>
                 </div>
             </div>
@@ -21,7 +18,7 @@
         <hr />
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <p class="subtitle text text-center">J'accède à mon Espace</p>
+                <p class="subtitle text text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.espace"></p>
                 <div class="form-group">
                     <div class="inputGroupContainer col-md-12">
                         <div class="input-group">

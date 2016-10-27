@@ -1,7 +1,6 @@
 <mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <div class="container" id="containerContactForm">
-
-    <h1 class="text-center">Contactez Nous!</h1>
+<h1 class="text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.contacttitle"></h1>
     <form name="contactForm" class="form-horizontal col-md-12" ng-submit="$ctrl.saveUser()" novalidate>
 
         <section class="row col-md-5">
