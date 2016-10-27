@@ -2,15 +2,16 @@
 /* intro */
 .intro {
 
-    background-image:  url('../img/introphoto1.jpeg');
-    background-position: center;
-    background-size: cover;
+    background-image:  url('../img/homepagepic.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-attachment: fixed;
     min-height: 40em;
 }
 
 .intro-title {
-    margin-top: 100px;
+    margin-top: 200px;
     color: #455a64;
     font-size: 45px;
 
