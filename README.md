@@ -57,13 +57,13 @@ __Default account__
 
 ### Database
 
-Export Database :
--users : mongoexport --db allset --collection users --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/users.json
--pages : mongoexport --db allset --collection pages --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/db.json
-
-Import Database : 
--users : mongoimport --db allset --collection users --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/users.json
--pages : mongoexport --db allset --collection pages --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/db.json
+Export Database :  
+-users : mongoexport --db allset --collection users --type=json --out ~/YOUR_PATH/bordeaux-0916-allset/users.json  
+-pages : mongoexport --db allset --collection pages --type=json --out ~/YOUR_PATH/bordeaux-0916-allset/db.json  
+  
+Import Database :   
+-users : mongoimport --db allset --collection users --type=json ~/YOUR_PATH/bordeaux-0916-allset/users.json   
+-pages : mongoexport --db allset --collection pages --type=json ~/YOUR_PATH/bordeaux-0916-allset/db.json   
 
 
 
