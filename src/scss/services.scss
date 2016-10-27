@@ -49,9 +49,18 @@
     .img-container {
         height: 25em;
     }
+    @media (min-width : 769px) {
+        .text-article {
+            width: 700px;
+        }
+    }
+    @media (max-width : 768px) {
+        .text-article {
+            max-width: 20em;
+        }
+    }
 
     .text-article {
-        width: 700px;
         margin: 5% auto;
 
         p {
@@ -60,4 +69,8 @@
             font-weight: 300;
         }
     }
+}
+
+.two {
+    margin-top: -5%;
 }

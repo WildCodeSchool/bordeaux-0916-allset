@@ -92,11 +92,11 @@
     background-position: bottom;
     background-size: cover;
     padding: 1em;
-    height: 30em;
+    //height: 30em;
 }
 .enga img {
   width: auto;
-  height: 25em;
+  //height: 25em;
 }
 .apropos {
   padding: 30px;
@@ -105,4 +105,7 @@
           padding-bottom: 80px;
         }
 
+}
+.img-responsive{
+  margin: auto;
 }
