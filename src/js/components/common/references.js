@@ -2,6 +2,10 @@
     'use strict'
 
     app.component("references", {
+      bindings:{
+        editMode:"<",
+        ngModel:"="
+      },
         templateUrl: 'js/components/common/references.html',
         controller: function($scope, $interval) {
 

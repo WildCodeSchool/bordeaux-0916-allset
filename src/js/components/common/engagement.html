@@ -1,0 +1,22 @@
+<section class="engagement">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 enga">
+                <img src="../img/engagement1.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h3>
+                    <i class="fa fa-circle-o" aria-hidden="true"></i>
+                    <div class="inline">
+                      <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.engagement.title">
+                          {{$ctrl.ngModel.engagement.title}}</span>
+                    </div>
+
+                </h3>
+                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.engagement.text">
+                    {{$ctrl.ngModel.engagement.text}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

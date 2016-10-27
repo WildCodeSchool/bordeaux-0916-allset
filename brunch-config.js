@@ -80,14 +80,8 @@ exports.config = {
                 "bower_components/slick-carousel/slick/slick-theme.css",
                 "bower_components/slick-carousel/slick/ajax-loader.gif"
             ],
-            "css/fonts": ["bower_components/font-awesome/fonts",
-                "bower_components/slick-carousel/slick/fonts/slick.woff",
-                "bower_components/slick-carousel/slick/fonts/slick.ttf"
-            ],
-            "fonts": ["bower_components/font-awesome/fonts",
-                "bower_components/slick-carousel/slick/fonts/slick.woff",
-                "bower_components/slick-carousel/slick/fonts/slick.ttf"
-            ],
+            "fonts": ["bower_components/font-awesome/fonts/"],
+            "css/fonts": ["bower_components/slick-carousel/slick/fonts/"],
             verbose: true,
             onlyChanged: true
         },

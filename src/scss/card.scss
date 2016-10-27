@@ -45,12 +45,18 @@
 
     h4 {
         color: rgb(79,79,79);
-        margin: 25px;
+        //margin: 25px;
         font-family: Poppins;
         font-size: 22px;
         line-height: 35px;
         letter-spacing: 0;
         font-weight: 600;
+    }
+
+    .btn {
+        background: rgb(6, 67, 96) !important;
+        margin: 1.8em auto 0.8em;
+        border: 2px solid rgba(49, 176, 213, 0);
     }
 }
 
@@ -77,14 +83,13 @@
 .card.selected {
     border: 2px solid $primary;
 }
-
-.card > .btn {
-    position: absolute;
-    width: 36px;
-    border-radius: 50%;
-    top: -15px;
-    right: 10px;
-}
+// .card > .btn {
+//     position: absolute;
+//     width: 36px;
+//     border-radius: 50%;
+//     top: -15px;
+//     right: 10px;
+// }
 
 .card-content {
     padding: 20px;
@@ -101,7 +106,7 @@
     color: $secondary;
 }
 /* icon */
-.card > .icon {
+.card .icon {
     color: $gray;
     text-align: center;
     font-size: 55px;

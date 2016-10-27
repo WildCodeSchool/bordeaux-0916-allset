@@ -12,7 +12,7 @@ html {
 body {
     //padding-top: 70px;
     background-color: $background;
-  //  color: $text-default;
+    //  color: $text-default;
 }
 /* form */
 .form {
@@ -186,28 +186,38 @@ h5 {
     font-family: $fontdefaut;
 }
 
-
-
-
-.assistance{
-  .inputGroupContainer{
-      padding: 1em;
-  }
-
-  .intro-assistance{
-      height: 20em;
-  }
-  .container{
-      height: 23em;
-  }
+h1 {
+    padding-bottom: 2em !important;
+    display: block !important;
 }
 
-.btn-info{
-    &:hover, &:focus, &:active, &:active:focus{
-        background-color : #00b5ad;
+.assistance {
+    .inputGroupContainer {
+        padding: 1em;
+    }
+
+    .intro-assistance {
+        height: 15em;
+    }
+
+    .container {
+        height: 28em;
+    }
+}
+
+.btn-info {
+    &:active,
+    &:active:focus,
+    &:focus,
+    &:hover {
+        background-color: #00b5ad;
     }
 }
 
 .espassistance {
-  padding-top: 4em;
+    padding-top: 4em;
+}
+
+.inline{
+    display: inline-block;
 }

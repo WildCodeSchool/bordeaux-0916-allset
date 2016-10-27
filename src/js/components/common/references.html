@@ -1,7 +1,7 @@
 <div class="references">
-    <div class="container text-center">
-        <h2 class="references-title">
-            Références
+    <div class="container text-center references-title">
+        <h2 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.title">
+            {{$ctrl.ngModel.title}}
         </h2>
     </div>
     <div class="container">
