@@ -54,6 +54,20 @@ __Default account__
 4. Git push origin dev
 5. Submit a pull request
 
+
+### Database
+
+Export Database :
+-users : mongoexport --db allset --collection users --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/users.json
+-pages : mongoexport --db allset --collection pages --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/db.json
+
+Import Database : 
+-users : mongoimport --db allset --collection users --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/users.json
+-pages : mongoexport --db allset --collection pages --type=json --out ~/Projects/WCS/Projet\ 2\ AllSet/bordeaux-0916-allset/db.json
+
+
+
+
 ### Licence
 
 This project is licensed under the MIT Open Source license. For more information, see the LICENSE file in this repository.
