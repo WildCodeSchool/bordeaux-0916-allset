@@ -9,7 +9,7 @@
                   content: {}
               },
               $onInit() {
-                  this.selectedService = this.lesapropos[$stateParams.lesaproposUrl]    
+                  this.selectedService = this.lesapropos[$stateParams.lesaproposUrl]
               }
                 // lesapropos: {
                 //     'notre-metier': {
@@ -75,6 +75,7 @@
                 // $onInit() {
                 //     this.selectedApropos = this.lesapropos[$stateParams.lesaproposUrl]
                 // }
+
 
             })
         }]
