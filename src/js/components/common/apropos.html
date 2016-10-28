@@ -2,12 +2,10 @@
 <div class="container-fluid text-center" style="background: white" id="testi">
 
   <div class="intro-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"></div>
-  <!-- <div class="intro-title" ng-bind-html="$ctrl.selectedApropos.title"> </div> -->
-
-
+  <div class="imgbgrd" style="background: url(img/{{$ctrl.page.name}}.jpg);"></div>
     <div id="commune">
 
-      <img class="img-responsive" ng-src="img/{{$ctrl.page.name}}.jpg" />
+      <!-- <img class="img-responsive" ng-src="img/{{$ctrl.page.name}}.jpg" /> -->
 
         <div class="block">
           <p class="subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.subtitle1"></p>
