@@ -109,3 +109,13 @@
 .img-responsive{
   margin: auto;
 }
+.img-engagement{
+  @media (min-width: 768px){
+    width: 50%;
+      float: left;
+      margin-bottom: -64px;
+      margin-left: -14px;
+      margin-top: -34px;
+      margin-right: 14px;
+  }
+}
