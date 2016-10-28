@@ -1,11 +1,10 @@
 @import 'colors';
 /* intro */
 .intro {
-
-    background-image:  url('../img/homepagepic.jpg');
-    background-position: top;
+    background-image: url(../img/homepagepic.jpg);
+    background-position: 50% -130px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     min-height: 40em;
 }
