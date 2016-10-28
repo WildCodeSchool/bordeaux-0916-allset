@@ -47,12 +47,14 @@
     //  padding: 2em;
     }
     img {
-
-      padding-top: 5em;
       height: 30em;
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: left;
     }
+}
+.imgbgrd {
+  background-size: cover !important;
+  height: 40em;
+  width: 100%;
 }
