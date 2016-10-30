@@ -6,7 +6,7 @@ footer {
 }
 
 .footer {
-  color: #7487ae !important;
+  color: #7487ae;
     p {
         margin-top: 0.8em !important;
         @media (min-width: 768px) {
@@ -16,12 +16,12 @@ footer {
     }
 
     a {
-        color: #7487ae !important;
+        color: #7487ae ;
     }
 
     .btn {
         margin-top: 0.3em;
-        color: $white !important;
+        color: $white ;
     }
 }
 

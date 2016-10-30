@@ -21,8 +21,8 @@
 }
 
 #button {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 0.63em;
+    padding-bottom: 0.313em;
 }
 
 .contact {
@@ -36,7 +36,7 @@
     color: $white;
     padding: 2em;
     //  color: white !important;
-    letter-spacing: 1px;
+    letter-spacing: 0.063em;
     background-color: rgb(73,117,186) !important; // rgba(12,13,14, 0.8)
 
     h2 {
@@ -51,7 +51,7 @@
 
     p {
         line-height: 200%;
-        font-size: 14px;
+        font-size: 0.875em;
     }
 
     .service {
@@ -64,13 +64,13 @@
 }
 
 #map {
-    min-height: 460px;
+    min-height: 28.8em;
     height: 35em;
     overflow: hidden;
     padding-bottom: 22.25%;
     position: relative;
     width: auto;
-    border: 2px white solid !important;
+    border: 0.125em white solid !important;
     @media (max-width: 767px) {
         height: 260px;
     }
@@ -81,9 +81,9 @@
 }
 
 .infoWindowContent {
-    font-size: 10px !important;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
+    font-size: 0.63em !important;
+    border-top: 0.063em solid #ccc;
+    padding-top: 0.63em;
 }
 
 #class,
@@ -98,21 +98,21 @@ a {
 
 h1 {
     color: #4975BA;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: 2.2em;
+    padding-bottom: 1.88em;
 }
 
 #button {
-    padding-top: 20px;
+    padding-top: 1.3em;
 }
 
 #containerContactForm {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 2.5em;
+    padding-bottom: 1.88em;
 }
 
 #selectReasonToContact {
-    padding-bottom: 15px;
+    padding-bottom: 0.94em;
 }
 
 .form-control {
@@ -142,7 +142,7 @@ h1 {
     p {
         color: black;
         padding: 0.3em 0;
-        margin: 10px;
+        margin: 0.63em;
     }
     .infoWindowContent{
         text-align: right;
