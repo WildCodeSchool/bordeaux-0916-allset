@@ -2,7 +2,7 @@
     <div class="apropos" id="apropos">
         <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.title"> {{$ctrl.ngModel.title}} </h1>
         <div class="row">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4  hauteur">
 
                 <h4><i class="fa fa-database" aria-hidden="true"></i>
                     <div class="inline">
@@ -14,8 +14,9 @@
                   <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card1.text">{{$ctrl.ngModel.card1.text}}</p>
 
                     <button ui-sref="app.lesapropos({ lesaproposUrl: 'notre-metier' })" class="btn center-block btnconsulter"> CONSULTER <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 hauteur">
                 <h4><i class="fa fa-circle-o-notch" aria-hidden="true"></i>
                     <div class="inline">
                         <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card2.title">
@@ -28,7 +29,7 @@
                       <button ui-sref="app.lesapropos({ lesaproposUrl: 'nos-demarches' })" class="btn center-block btnconsulter2"> CONSULTER <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
 
             </div>
-      <div class="col-xs-12 col-sm-4">
+      <div class="col-xs-12 col-sm-4 hauteur">
           <h4><i class="fa fa-bars" aria-hidden="true"></i>
               <div class="inline">
                   <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card3.title">
@@ -38,7 +39,7 @@
           </h4>
           <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.card3.text">{{$ctrl.ngModel.card3.text}}</p>
 
-            <button ui-sref="app.lesapropos({ lesaproposUrl: 'notre-organisation' })" class="btn center-block btnconsulter"> CONSULTER <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <button ui-sref="app.lesapropos({ lesaproposUrl: 'notre-organisation' })" class="btn center-block  btnconsulter"> CONSULTER <i class="fa fa-angle-right" aria-hidden="true"></i></button>
   </div>
 </div>
 </div>

@@ -69,10 +69,19 @@
     height: 40em;
 }
 
-.btnconsulter {
-    margin-top: 4em;
-}
+ .btnconsulter {
+     margin-top: 4em;
+     position: relative;
+ }
 
-.btnconsulter2 {
-    margin-top: 5.38em;
+ .btnconsulter2 {
+     margin-top: 5.38em;
+     position: relative;
+
+ }
+
+.hauteur {
+  background-color: inherit;
+  height: 15em !important;
+position: sticky;
 }

@@ -60,6 +60,10 @@
 
     a {
         color: $white; //#7487ae;
+        text-align: center;
+    }
+    a:hover {
+      color: #004E94;
     }
 }
 
@@ -86,11 +90,7 @@
     padding-top: 0.63em;
 }
 
-#class,
-a {
-    text-align: center;
-}
-// modifs vivien under this line
+// CSS du Formulaire en dessous
 
 #success_message {
     display: none;
