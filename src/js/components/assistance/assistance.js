@@ -18,15 +18,17 @@
                 connect() {
                     UserService.connect(this.user).then((res) => {
                         $state.reload()
+                        toastr.success("Vous êtes connecté", "Connection")
                     }).catch(() => {
-                        //ERROR
+                        toastr.error('Vos identifiants sont incorrects', 'Erreur');
                     })
                 },
                 disconnect() {
                     UserService.disconnect(this.user).then((res) => {
                         $state.reload()
+                        toastr.success("Vous êtes déconnecté", "Déconnection")
                     }).catch(() => {
-                        //ERROR
+                        toastr.error('Veuillez actualiser la page', 'Erreur');
                     })
                 },
                 page: {
