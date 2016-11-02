@@ -62,7 +62,7 @@ button.navbar-toggle:hover > .icon-bar {
 
 #mininavbar {
     position: fixed;
-    top: 3.75em;
+    top: 4.5em;
     right: 0;
     color: white;
     background-color: rgba(40, 96, 144, 0.41);
@@ -72,8 +72,8 @@ button.navbar-toggle:hover > .icon-bar {
     .fa {
         color: white;
         font-size: 2.85em;
-        width: 2.85em;
-        height: 2.85em;
+        // width: 2.85em;
+        // height: 2.85em;
     }
 }
 .navbar-default {
