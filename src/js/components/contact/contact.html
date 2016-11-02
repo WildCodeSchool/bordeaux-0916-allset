@@ -1,6 +1,6 @@
 <mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <div class="container" id="containerContactForm">
-<h1 class="text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.contacttitle"></h1>
+    <h1 class="text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.contacttitle"></h1>
     <form name="contactForm" class="form-horizontal col-md-12" ng-submit="$ctrl.saveUser()" novalidate>
 
         <section class="row col-md-5">
@@ -9,7 +9,7 @@
                 <div class="inputGroupContainer col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
-                        <input name="nom" placeholder="Nom" class="form-control" type="text" ng-model="$ctrl.contactInfo.nom" required>
+                        <input name="nom" placeholder="Nom" class="form-control" type="text" ng-model="$ctrl.contactInfo.nom" ng-minlength=1 required="required">
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                 <div class="inputGroupContainer col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user bigicon"></i></span>
-                        <input name="prenom" placeholder="Prénom" class="form-control" type="text" ng-model="$ctrl.contactInfo.prenom">
+                        <input name="prenom" placeholder="Prénom" class="form-control" type="text" ng-model="$ctrl.contactInfo.prenom" ng-minlength=1 required="required">
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <div class="inputGroupContainer col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-envelope bigicon"></i></span>
-                        <input name="email" placeholder="E-Mail" class="form-control" type="email" ng-model="$ctrl.contactInfo.email">
+                        <input name="email" placeholder="E-Mail" class="form-control" type="email" ng-model="$ctrl.contactInfo.email" required="required">
                     </div>
                 </div>
             </div>
@@ -36,14 +36,14 @@
                 <div class="inputGroupContainer col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-phone bigicon"></i></span>
-                        <input name="telephone" placeholder="Téléphone" class="form-control" type="text" ng-model="$ctrl.contactInfo.telephone">
+                        <input name="telephone" placeholder="Téléphone" class="form-control" type="text" ng-model="$ctrl.contactInfo.telephone" ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/" required="required">
                     </div>
                 </div>
             </div>
 
             <div class="col-md-12" id="selectReasonToContact">
-                <select class="col-md-12" ng-model="$ctrl.contactInfo.sujet" name="sujet">
-                      <option value="Sujet pour lequel vous nous contactez" selected>Sujet pour lequel vous nous contactez</option>
+                <select class="col-md-12" ng-model="$ctrl.contactInfo.sujet" name="sujet" required="required">
+                      <!-- <option value="Sujet pour lequel vous nous contactez">Sujet pour lequel vous nous contactez</option> -->
                       <option value="Investisseur">Investisseur</option>
                       <option value="Recrutement">Recrutement</option>
                       <option value="Demande d'informations">Demande d'informations</option>
@@ -59,7 +59,7 @@
                 <div class="inputGroupContainer col-md-offset-1 .col-md-11">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-pencil bigicon"></i></span>
-                        <textarea class="form-control col-md-10" name="message" placeholder="Message" rows="10" ng-model="$ctrl.contactInfo.message"></textarea>
+                        <textarea class="form-control col-md-10" name="message" placeholder="Message" rows="10" ng-model="$ctrl.contactInfo.message" ng-minlength=10 required="required"></textarea>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
         <section class="row col-md-12 col-sm-12 col-xs-12">
             <div class="form-group col-md-12 col-sm-12 col-xs-12" id="button">
                 <label class="control-label"></label>
-                <button id="btn" type="submit" class="btn btn-warning col-md-offset-5 col-sm-offset-5 col-xs-offset-5">Envoyer <span class="fa fa-send bigicon"></span></button>
+                <button id="btn" type="submit" class="btn btn-warning col-md-offset-5 col-sm-offset-5 col-xs-offset-5" ng-disabled="contactform.$invalid">Envoyer <span class="fa fa-send bigicon"></span></button>
             </div>
         </section>
 
