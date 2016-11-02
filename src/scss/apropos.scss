@@ -2,7 +2,7 @@
 
 #aproposhome {
     padding: 0 0 6em;
-  //  background-color: rgb(198,215,228);
+    //  background-color: rgb(198,215,228);
     h1,
     h4 {
         text-align: center;
@@ -11,48 +11,68 @@
     }
 
     p {
-        text-align: justify;;
+        text-align: justify;
     }
+}
 
-}
 #testi {
-  padding:0;
+    padding: 0;
 }
+
 #commune {
 
-    font-size: 20px;
-    padding: 0 0 6em ;
-
+    font-size: 1.250em;
+    padding: 0 0 6em;
 
     .block {
-      margin: 6em auto;
-      width: 700px;
-      display: block;
+        margin: 6em auto;
+        // text-align: justify;
+    }
+    @media (min-width : 48em) {
+        .block {
+            width: 43.750em;
+        }
+    }
+    @media (max-width : 48em) {
+        .block {
+            max-width: 20em;
+        }
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         padding: 2em;
     }
 
-    ul:first-child{
-      padding:2em;
+    ul:first-child {
+        padding: 2em;
     }
 
     p {
         text-align: justify;
-
     }
+
     .subtitle {
-      text-align: center;
-    //  padding: 2em;
+        text-align: center;
     }
-    img {
 
-      padding-top: 5em;
-      height: 30em;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: left;
+    img {
+        height: 30em;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+}
+
+.imgbgrd {
+    background-size: cover !important;
+    height: 40em;
+}
+
+.btnconsulter {
+    margin-top: 4em;
+}
+
+.btnconsulter2 {
+    margin-top: 5.38em;
 }
