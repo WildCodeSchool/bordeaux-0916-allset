@@ -171,8 +171,9 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     text-align: right;
 }
 
-a {
-    color: black;
+a:hover {
+  text-decoration: inherit;
+  color: #004E94;
 }
 
 .subtitle,

@@ -2,7 +2,7 @@
 /* intro */
 .intro {
     background-image: url(../img/homepagepic.jpg);
-    background-position: 50% -130px;
+    background-position: 50% -8.13em;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12,13 +12,13 @@
 .intro-title {
     margin: 2em 0 1em 0;
     color: #455a64;
-    font-size: 45px;
+    font-size: 2.8em;
 
 }
 
 .subtitle {
     color: $text-default;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .references-title {
@@ -27,7 +27,7 @@
 
 .references {
     background-color: $white;
-    padding: 30px 0;
+    padding: 1.88em 0;
     height: 22em;
 
     div {
@@ -39,7 +39,7 @@
         -moz-transform: translateY(0px);
         transition: all 200ms ease-in;
         transform: translateY(0px);
-        height: 80px;
+        height: 5em;
 
         div {
           div{
@@ -79,30 +79,28 @@
         }
     }
     .row {
-      padding-top: 45px;
+      padding-top: 2.8em;
     }
 
 }
 
 .engagement {
-  //  height: 40em;
-   //background-image: url("../img/engagement1.jpg");
+
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     padding: 1em;
-    //height: 30em;
-    border-top: 1px solid white;
+    border-top: 0.063em solid white;
 }
 .enga img {
   width: auto;
   //height: 25em;
 }
 .apropos {
-  padding: 30px;
+  padding: 1.88em;
   height: 30em;
         h1 {
-          padding-bottom: 80px;
+          padding-bottom: 5em;
         }
 
 }
