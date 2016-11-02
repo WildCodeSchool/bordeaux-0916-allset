@@ -2,7 +2,7 @@
 <section class="assistance">
     <div class="intro-assistance">
         <div class="container text-center">
-          <h1 class="intro-title text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancetitle"></h1>
+            <h1 class="intro-title text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancetitle"></h1>
         </div>
     </div>
     <div class="container">
@@ -10,12 +10,14 @@
             <div class="col-sm-6 col-sm-offset-3">
                 <p class="subtitle text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistance"></p>
                 <div class="inputGroupContainer text-center">
-                    <button class="btn"><div class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancebutton"></div><i class="fa fa-laptop fa-lg"></i>
+                    <button class="btn">
+                        <div class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancebutton"></div>
+                        <i class="fa fa-laptop fa-lg"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <hr />
+        <hr/>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <p class="subtitle text text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.espace"></p>
@@ -40,8 +42,12 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button class="btn" ng-click="$ctrl.connect()">Se Connecter
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <button class="btn" ng-click="$ctrl.connect()">Se Connecter <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                    <br />
+                </div>
+                <div class="text-center disconnect" ng-if="$ctrl.user.isAdmin">
+                    <button class="btn" ng-click="$ctrl.disconnect()">Se Déconnecter <i class="fa fa-chevron-left" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>

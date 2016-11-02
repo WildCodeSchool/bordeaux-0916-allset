@@ -48,6 +48,7 @@
     'ngCookies',
     'ngSanitize',
     'slick',
+    'ngAnimate',
     'angular-md5',
     'InlineTextEditor',
     'textAngular',

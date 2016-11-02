@@ -16,6 +16,7 @@
         //color: #032230;
         color: white;
         text-shadow: 1px 1px 1px black;
+        z-index: 2;
     }
 }
 
@@ -24,13 +25,16 @@
     background: url("../img/data-center.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.65;
+    //opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
+    filter: saturate(50%);
+    -webkit-filter: saturate(50%);
+    -moz-filter: saturate(50%);
 }
 
 .myservice {
@@ -75,4 +79,12 @@
 
 .two {
     margin-top: -5%;
+}
+
+.white-bg {
+    background-color: $white;
+}
+
+.productpage {
+  padding-top: 60px;
 }

@@ -1,8 +1,8 @@
 @import 'colors';
 /* intro */
 .intro {
-    background-image: url(../img/homepagepic.jpg);
-    background-position: 50% -8.13em;
+    background-image: url(../img/notre-metier.jpg);
+    background-position: 50% -14.13em;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10,9 +10,12 @@
 }
 
 .intro-title {
-    margin: 2em 0 1em 0;
+    margin: 4em 0 1em 0;
     color: #455a64;
     font-size: 2.8em;
+    img{
+      width: 35%;
+    }
 
 }
 
