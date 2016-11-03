@@ -9,11 +9,15 @@
         <div class="espassistance row">
             <div class="col-sm-6 col-sm-offset-3">
                 <p class="subtitle text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistance"></p>
+                <p class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancetext"></p>
                 <div class="inputGroupContainer text-center">
-                    <button class="btn">
-                        <div class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancebutton"></div>
-                        <i class="fa fa-laptop fa-lg"></i>
-                    </button>
+                    <a href="https://get.teamviewer.com/qsallset" target="_blank">
+                        <button class="btn">
+                            <!-- <div class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.assistancebutton"></div> -->
+                            Accéder à l'assistance
+                            <i class="fa fa-laptop fa-lg"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
