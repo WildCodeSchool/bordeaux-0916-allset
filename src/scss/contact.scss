@@ -62,8 +62,9 @@
         color: $white; //#7487ae;
         text-align: center;
     }
+
     a:hover {
-      color: #004E94;
+        color: #004E94;
     }
 }
 
@@ -118,6 +119,12 @@ h1 {
 .form-control {
     border-radius: 0;
     border: 0 solid #ccc;
+    transition: all linear 0.5s;
+    background: white;
+}
+
+.form-control.ng-invalid.ng-dirty {
+    background-color: pink;
 }
 
 .input-group-addon {
@@ -144,7 +151,8 @@ h1 {
         padding: 0.3em 0;
         margin: 0.63em;
     }
-    .infoWindowContent{
+
+    .infoWindowContent {
         text-align: right;
     }
 }
