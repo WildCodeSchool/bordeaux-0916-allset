@@ -59,3 +59,35 @@ exports.startServer = (port, path, callback) => {
         }
     })
 }
+
+
+app.post('/mail', (req, res) => {
+    let mailcontent = req.body
+    let helper = require('sendgrid').mail,
+    from_email = new helper.Email("contactallset@gmail.com"),
+    to_email = new helper.Email("contactallset@gmail.com"),
+    subject = "Demande de prise de contact via le site internet",
+    content = new helper.Content("text/plain", `
+    ${'Demande de prise de contact via le site internet'}
+    ${'Nom Prénom : '}${mailcontent.nom} ${mailcontent.prenom}
+    ${'Email : '}${mailcontent.email}
+    ${'Téléphone : '} ${mailcontent.telephone}
+    ${'Sujet : '}${mailcontent.sujet}
+    ${'Message : '}${mailcontent.message}
+    `),
+    mail = new helper.Mail(from_email, subject, to_email, content)
+
+    let sg = require('sendgrid')(process.env.SENDGRID_API_KEY || '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');
+    let request = sg.emptyRequest({
+        method: 'POST',
+        path: '/v3/mail/send',
+        body: mail.toJSON()
+    });
+
+    sg.API(request, function(error, response) {
+        console.log(response.statusCode)
+        console.log(response.body)
+        console.log(response.headers)
+        res.sendStatus(200)
+    })
+})
