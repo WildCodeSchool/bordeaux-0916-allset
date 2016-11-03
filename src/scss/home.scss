@@ -10,9 +10,9 @@
 }
 
 .intro-title {
-    margin: 4em 0 1em;
     color: #455a64;
     font-size: 2.8em;
+    margin: 2em 0 1em;
     img {
         width: 75%;
     }
@@ -20,7 +20,8 @@
         img {
             width: 35%;
         }
-    }    
+        margin: 4em 0 1em;
+    }
 }
 
 .subtitle {
@@ -98,6 +99,9 @@
     background-size: cover;
     padding: 1em;
     //border-top: 0.063em solid white;
+    p{
+      text-align: justify;
+    }
 }
 
 .enga img {
