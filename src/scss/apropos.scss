@@ -50,6 +50,7 @@
 
     p {
         text-align: justify;
+        padding: 10px;
     }
 
     .subtitle {
@@ -67,6 +68,9 @@
 .imgbgrd {
     background-size: cover !important;
     height: 40em;
+    @media (max-width: 768px){
+      height: 15em;
+    }
 }
 
 .btnconsulter {

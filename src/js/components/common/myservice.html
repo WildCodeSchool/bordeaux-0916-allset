@@ -1,5 +1,5 @@
 <mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
-<div class="myservice" style="background: url(img/{{$ctrl.page.name}}.jpg) no-repeat !important; background-size: contain !important;">
+<div class="myservice" style="background-image: url(img/{{$ctrl.page.name}}.jpg)">
     <h1 class="intro-title text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"></h1>
     <div class="container">
         <br />
@@ -9,5 +9,5 @@
         </div>
     </div>
 
-    
+
 </div>

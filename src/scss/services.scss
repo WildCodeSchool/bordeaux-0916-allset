@@ -10,6 +10,10 @@
     position: relative;
     padding: 30px;
 
+    @media(max-width: 768px){
+      margin-top: -15px;
+    }
+
     h1,
     h4 {
         text-align: center;
@@ -41,6 +45,7 @@
     background-repeat: no-repeat !important;
     background-color: white;
     padding: 30px;
+    background-size: contain;
 
     h1 {
         color: white;
@@ -61,6 +66,10 @@
         }
     }
     @media (max-width : 768px) {
+        background-size: 260%;
+        background-position: 50% 0;
+        padding: 30px 0;
+
         .text-article {
             max-width: 20em;
         }
@@ -86,5 +95,5 @@
 }
 
 .productpage {
-  padding-top: 60px;
+    padding-top: 60px;
 }

@@ -1,8 +1,8 @@
 @import 'colors';
 /* intro */
 .intro {
-    background-image: url(../img/notre-metier.jpg);
-    background-position: 50% -14.13em;
+    background-image: url("../img/notre-metier.jpg");
+    background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10,13 +10,17 @@
 }
 
 .intro-title {
-    margin: 4em 0 1em 0;
+    margin: 4em 0 1em;
     color: #455a64;
     font-size: 2.8em;
-    img{
-      width: 35%;
+    img {
+        width: 75%;
     }
-
+    @media (min-width: 768px) {
+        img {
+            width: 35%;
+        }
+    }    
 }
 
 .subtitle {
@@ -45,78 +49,79 @@
         height: 5em;
 
         div {
-          div{
-            div{
-              :hover:not(img) {
-                  box-shadow: 1px 1px 3px gray;
-                  z-index: 2;
-                  -webkit-transition: all 200ms ease-in;
-                  -webkit-transform: translateY(-2px);
-                  -ms-transition: all 200ms ease-in;
-                  -ms-transform: translateY(-2px);
-                  -moz-transition: all 200ms ease-in;
-                  -moz-transform: translateY(-2px);
-                  transition: all 200ms ease-in;
-                  transform: translateY(-2px);
-              }
+            div {
+                div {
+                    :hover:not(img) {
+                        box-shadow: 1px 1px 3px gray;
+                        z-index: 2;
+                        -webkit-transition: all 200ms ease-in;
+                        -webkit-transform: translateY(-2px);
+                        -ms-transition: all 200ms ease-in;
+                        -ms-transform: translateY(-2px);
+                        -moz-transition: all 200ms ease-in;
+                        -moz-transform: translateY(-2px);
+                        transition: all 200ms ease-in;
+                        transform: translateY(-2px);
+                    }
+                }
             }
-          }
         }
     }
+
     img {
         filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         img {
             height: 1.5em;
             margin: auto;
         }
     }
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
         img {
             height: 2.5em;
             margin: auto;
         }
     }
-    .row {
-      padding-top: 2.8em;
-    }
 
+    .row {
+        padding-top: 2.8em;
+    }
 }
 
 .engagement {
-
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     padding: 1em;
     //border-top: 0.063em solid white;
 }
-.enga img {
-  width: auto;
-  //height: 25em;
-}
-.apropos {
-  padding: 1.88em;
-  height: 30em;
-        h1 {
-          padding-bottom: 5em;
-        }
 
+.enga img {
+    width: auto;
+    //height: 25em;
 }
-.img-responsive{
-  margin: auto;
+
+.apropos {
+    padding: 1.88em;
+    height: 30em;
+
+    h1 {
+        padding-bottom: 5em;
+    }
 }
-.img-engagement{
-  @media (min-width: 768px){
-    width: 50%;
-      float: left;
-      margin-bottom: -64px;
-      margin-left: -14px;
-      margin-top: -14px;
-      margin-right: 14px;
-  }
+
+.img-responsive {
+    margin: auto;
+}
+
+.img-engagement {
+    @media (min-width: 768px) {
+        width: 50%;
+        float: left;
+        margin: -14px 14px -64px -14px;
+    }
 }

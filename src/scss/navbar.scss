@@ -87,3 +87,11 @@ button.navbar-toggle:hover > .icon-bar {
 .navbar-default {
     background-color: white;
 }
+
+.navbar-nav {
+    margin: 0 -15px;
+    background-color: white;
+    @media (max-width: 768px) {
+        padding-bottom: 10px;
+    }
+}

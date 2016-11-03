@@ -3,20 +3,20 @@
         <div class="navbar-header">
             <a class="navbar-brand" ui-sref="app.home">
               <img src="img/logo-allset.png" alt="" height="30"></a>
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <button class="navbar-toggle collapsed" type="button" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" aria-controls="bs-navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <nav id="bs-navbar" class="navbar-collapse" ng-class="{collapse: isCollapsed}" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav navbar-right">
               <!-- <li ui-sref-active="selected"><a ui-sref="app.home">{{'COMMON_HOME' | translate}}</a></li> -->
-              <li ui-sref-active="selected"><a ui-sref="app.whoiam">{{'COMMON_WHOIAM' | translate}}</a></li>
-              <li ui-sref-active="selected"><a ui-sref="app.produits">{{'COMMON_PRODUCT' | translate}}</a></li>
-              <li ui-sref-active="selected"><a ui-sref="app.form">{{'COMMON_ABOUT' | translate}}</a></li>
-              <li ui-sref-active="selected"><button ui-sref="app.assistance" class="btn bta center-block"><i class="fa fa-laptop fa-lg"></i> {{'COMMON_ASSISTANCE' | translate}}</button>
+              <li ui-sref-active="selected" ng-click="isCollapsed = !isCollapsed"><a ui-sref="app.whoiam">{{'COMMON_WHOIAM' | translate}}</a></li>
+              <li ui-sref-active="selected" ng-click="isCollapsed = !isCollapsed"><a ui-sref="app.produits">{{'COMMON_PRODUCT' | translate}}</a></li>
+              <li ui-sref-active="selected" ng-click="isCollapsed = !isCollapsed"><a ui-sref="app.form">{{'COMMON_ABOUT' | translate}}</a></li>
+              <li ui-sref-active="selected" ng-click="isCollapsed = !isCollapsed"><button ui-sref="app.assistance" class="btn bta center-block"><i class="fa fa-laptop fa-lg"></i> {{'COMMON_ASSISTANCE' | translate}}</button>
 </li>
             </ul>
         </nav>
