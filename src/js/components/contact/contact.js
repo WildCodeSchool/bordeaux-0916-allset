@@ -16,9 +16,11 @@
                 },
                 $onInit() {},
                 saveUser() {
+                  //récupération des champs du formulaire via les ng-model
                     var message = this.contactInfo;
                     $http.post('/mail', message).
                     success(function(message, status, headers, config) {
+                      //toastr : affichage des popups
                         toastr.success('Votre message a bien été envoyé', 'Message envoyé')
                         $state.reload()
                     }).
