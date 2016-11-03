@@ -63,5 +63,6 @@
     'app.myservices',
     'app.form',
     'app.lesapropos',
-    'app.whoiam'
+    'app.whoiam',
+    'app.admin'
 ]))

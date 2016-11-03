@@ -1,13 +1,45 @@
-<div id="mininavbar" ng-if="$ctrl.user.isAdmin">
-    <a ng-click="$ctrl.editMode = !$ctrl.editMode" ng-if="!$ctrl.editMode">
-        <i class="fa fa-edit"></i>
-    </a>
-    <div ng-if="$ctrl.editMode">
-        <a ng-click="$ctrl.cancel()">
-            <i class="fa fa-close"></i>
-        </a>
-        <a ng-click="$ctrl.save()">
-            <i class="fa fa-check"></i>
-        </a>
+<section>
+    <div id="mininavbar" ng-if="$ctrl.user.isAdmin">
+        <div ng-if="!$ctrl.editMode">
+
+                <div class="col-xs-6">
+                    <a ng-click="$ctrl.editMode = !$ctrl.editMode">
+                        <i class="fa fa-edit"></i>
+                        <p>
+                            Édition
+                        </p>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a ng-click="$ctrl.disconnect()">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <p>
+                            Logout
+                        </p>
+                    </a>
+                </div>
+
+        </div>
+        <div ng-if="$ctrl.editMode">
+
+                <div class="col-xs-6">
+                    <a ng-click="$ctrl.cancel()">
+                        <i class="fa fa-close"></i>
+                        <p>
+                            Annuler
+                        </p>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a ng-click="$ctrl.save()">
+                        <i class="fa fa-check"></i>
+                        <p>
+                            Valider
+                        </p>
+                    </a>
+                </div>
+
+
+        </div>
     </div>
-</div>
+</section>
