@@ -34,6 +34,7 @@
     "node-phantom": "^0.2.5",
     "phantom": "^2.1.21",
     "sass-brunch": "^2.6.3",
+    "sendgrid": "^4.7.1",
     "uglify-js-brunch": "^2.0.1"
   }
 }
