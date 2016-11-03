@@ -6,7 +6,7 @@
             ngModel: '='
         },
         templateUrl: 'js/components/common/mini-navbar.html',
-        controller: function(PageService, UserService) {
+        controller: function(PageService, UserService, $state) {
             angular.extend(this, {
                 initialData: null,
                 $onInit() {
@@ -32,7 +32,15 @@
                 cancel() {
                     this.editMode = false
                     this.ngModel = this.initialData
-                }
+                },
+                disconnect() {
+                            UserService.disconnect(this.user).then((res) => {
+                                $state.reload()
+                                toastr.warning("Vous êtes déconnecté", "Déconnexion")
+                            }).catch(() => {
+                                toastr.error('Veuillez actualiser la page', 'Erreur');
+                            })
+                        }
             })
         }
     })
