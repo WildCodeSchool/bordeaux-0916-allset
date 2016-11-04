@@ -22,8 +22,13 @@
         text-shadow: 1px 1px 1px black;
         z-index: 2;
     }
-}
 
+}
+services{
+    .btn:hover{
+      border: 2px solid rgb(198, 215, 228);
+    }
+}
 .services::after {
     content: "";
     background: url("../img/data-center.jpg");
