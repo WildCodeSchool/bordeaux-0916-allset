@@ -1,13 +1,20 @@
 # ALLSET // w/ Tiny-mean-cms
 
-[![Licence](https://img.shields.io/badge/licence-MIT-blue.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/blob/master/LICENCE) [![Release](https://img.shields.io/github/release/jbehuet/tiny-mean-cms.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/releases)
-[![GitHub forks](https://img.shields.io/github/forks/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/network) [![GitHub issues](https://img.shields.io/github/issues/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/issues)
+[![Licence](https://img.shields.io/badge/licence-MIT-blue.svg?maxAge=2592000)](https://github.com/WildCodeSchool/bordeaux-0916-allset/blob/master/LICENCE)
 
-Tiny-mean-cms : CMS Project with [MEAN stack](http://mean.io/#!/)
+Tiny-mean-cms : CMS Project with [MEAN stack](http://mean.io/#!/) by [@jbehuet](https://github.com/jbehuet/tiny-mean-cms)
 
 ### Context
 
-Refonte du site ALLSET.
+Second professional project for the Wild Code School's Bordeaux students.
+
+We have to create a website for ALLSET from scratch.
+
+The team :  
+Paul de Barthez aka [@uxpaul](https://github.com/uxpaul)  
+Vivien Huc aka [@Bully47](https://github.com/Bully47)  
+Sébastien Palacin aka [@sbstnplcn](https://github.com/sbstnplcn)
+
 
 <!-- ### Previews
 | Home   |      Edition      | Dashboard |
@@ -31,7 +38,9 @@ bower i
 npm i
 ```
 
-__Default account__
+__Default account__  
+
+Accès à l'admin : http://WEBSITE/#!/admin
 > Email : admin@domain.ext  
 > Password : admin
 
@@ -60,16 +69,19 @@ __Default account__
 Export Database :  
 -users : mongoexport --db allset --collection users --type=json --out ~/YOUR_PATH/bordeaux-0916-allset/users.json  
 -pages : mongoexport --db allset --collection pages --type=json --out ~/YOUR_PATH/bordeaux-0916-allset/db.json  
-  
+
 Import Database :   
 -users : mongoimport --db allset --collection users --type=json ~/YOUR_PATH/bordeaux-0916-allset/users.json   
 -pages : mongoexport --db allset --collection pages --type=json ~/YOUR_PATH/bordeaux-0916-allset/db.json   
 
+### Mail
 
-
+Use the SendGrid Node.js technic to send mails.
+We have create a specific Gmail account and a specific SendGrid account.
+Find more informations in server.js file.
 
 ### Licence
 
 This project is licensed under the MIT Open Source license. For more information, see the LICENSE file in this repository.
 
-Thanks to @jbehuet and the WildCodeSchool
+Thanks to [@jbehuet](https://github.com/jbehuet) and the [WildCodeSchool](http://www.wildcodeschool.fr)
