@@ -17,7 +17,7 @@
                 },
                 connect() {
                     UserService.connect(this.user).then((res) => {
-                        $state.reload()
+                        $state.go('app.dashboard')
                         toastr.success("Vous êtes connecté", "Connexion")
                     }).catch(() => {
                         toastr.error('Vos identifiants sont incorrects', 'Erreur');
