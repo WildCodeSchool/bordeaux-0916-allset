@@ -64,5 +64,6 @@
     'app.form',
     'app.lesapropos',
     'app.whoiam',
-    'app.admin'
+    'app.admin',
+    'app.ml'
 ]))

@@ -221,3 +221,8 @@ h1 {
 .disconnect {
   padding-top: 20px;
 }
+@media (max-width: 768px){
+  .navbar-brand {
+      padding: 10px 15px;
+  }
+}

@@ -1,0 +1,26 @@
+<!--Correspond à la page Que faisons nous-->
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
+<section>
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Mentions Légales</h1>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 white-bg">
+          <p class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.mltext1"></p>
+          <br />
+          <p class="inline" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.mltext2"></p>
+          <p>
+            Conception et réalisation :
+            <br />Les élèves de la Wild Code School Bordeaux :
+            <br />
+            Paul de Barthez, Vivien Huc, Sébastien Palacin
+            <br />
+            <a href="//www.wildcodeschool.fr" target="_blank">www.wildcodeschool.fr</a>
+          </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="contact">
+    <contact edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.contact"></contact>
+</section>

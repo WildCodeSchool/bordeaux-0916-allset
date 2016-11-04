@@ -60,7 +60,19 @@ exports.startServer = (port, path, callback) => {
     })
 }
 
+/*
+Pour les mails :
 
+Utilisation de SendGrid (équivalent MailChimp mais gratuit pour moins de 12k mail / mois) comme server mail node.js
+
+Créations de comptes dédiés pour le fonctionnement : 
+
+ - compte Gmail :
+      email : contactallset@gmail.com // pass : allsetmail
+ - compte SendGrid :
+      email : contactallset@gmail.com // username : allsetcontact // pass : allsetmail0
+
+*/
 app.post('/mail', (req, res) => {
     let mailcontent = req.body
     let helper = require('sendgrid').mail,

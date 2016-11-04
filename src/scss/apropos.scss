@@ -26,7 +26,9 @@
 
     .block {
         margin: 6em auto;
-        // text-align: justify;
+        @media (max-width: 767px){
+          margin: 3em auto;
+        }
     }
     @media (min-width : 48em) {
         .block {
@@ -50,6 +52,7 @@
 
     p {
         text-align: justify;
+        padding: 10px;
     }
 
     .subtitle {
@@ -66,7 +69,12 @@
 
 .imgbgrd {
     background-size: cover !important;
-    height: 40em;
+    height: 15em;
+    background-repeat: no-repeat;
+    @media (min-width: 767px){
+      background-position: 0px -10em;
+      height: 30em;
+    }
 }
 
 .btnconsulter {

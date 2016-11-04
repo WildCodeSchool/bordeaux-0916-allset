@@ -1,63 +1,114 @@
 <div class="container-fluid" id="contact">
-  <h2 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.title">
-          {{$ctrl.ngModel.title}}
-      </h2>
-  <div class="row">
-    <div class="col-xs-12 col-md-6 nomap">
+    <h2 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.title">
+        {{$ctrl.ngModel.title}}
+    </h2>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 nomap">
+            <div class="row">
+                <div class="col-xs-6 col-sm-5">
+                    <p>
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                        Téléphone
+                    </p>
+                    <p>
+                        +33 (1) 49 38 12 20
+                    </p>
+                    <p>
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                        Service technique</p>
+                    <p>
+                        +33 (1) 49 38 12 22
+                    </p>
+                    <p>
+                        <i class="fa fa-fax fa-lg" aria-hidden="true"></i>
+                        Fax
+                    </p>
+                    <p>
+                        +33 (1) 49 38 12 29
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                        E-mail
+                    </p>
+                    <p>
+                        <a href="mailto:contact@allset.fr">
+                            contact@allset.fr
+                        </a>
+                    </p>
+                </div>
 
-  <div class="col-xs-6 col-sm-5">
-    <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Téléphone </p>
-    <p> +33 (1) 49 38 12 20 </p>
-    <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Service technique</p>
-    <p>  +33 (1) 49 38 12 22 </p>
-    <p><i class="fa fa-fax fa-lg" aria-hidden="true"></i> Fax </p>
-    <p> +33 (1) 49 38 12 29 </p>
-    <p><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-mail </p>
-    <p>  <a href="mailto:contact@allset.fr"> contact@allset.fr </a> </p>
-  </div>
+                <div class="col-xs-6 col-sm-7">
+                    <p>
+                        <i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+                        Adresse
+                    </p>
+                    <p>
+                        Central II, 460 clos de la Courtine
+                    </p>
+                    <p>
+                        93160 Noisy-le-Grand
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                        Nos établissements
+                    </p>
+                    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+                        <p>
+                            <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <div class="col-xs-6 col-sm-7">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">
+                    <div class="row">
+                        <p class="service">
+                            <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                            Services
+                        </p>
 
-    <p><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i> Adresse </p>
-    <p> Central II, 460 clos de la Courtine </p>
-    <p>  93160 Noisy-le-Grand </p>
-    <br>
-    <br>
-    <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Nos établissements </p>
-    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-    <p>  <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a></p>
-  </div>
+                        <div class="col-xs-6 col-sm-5">
+                            <p>
+                                Marketing
+                                <a href="mailto:marketing@allset.fr"><br>
+                                    marketing@allset.fr
+                                </a>
+                            </p>
+                            <p>
+                                Commercial
+                                <a href="mailto:commercial@allset.fr"><br>
+                                    commercial@allset.fr
+                                </a>
+                            </p>
+                        </div>
 
-  </div>
-  <div class="col-xs-12 col-md-12">
-    <p class="service"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>  Services </p>
+                        <div class="col-xs-6 col-sm-7">
+                            <p>
+                                Technique
+                                <a href="mailto:technique@allset.fr"><br>
+                                    technique@allset.fr
+                                </a>
+                            </p>
+                            <p>
+                                Câblage
+                                <a href="mailto:infra@allset.fr"><br>
+                                    infra@allset.fr
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="col-xs-6 col-sm-5">
-    <p> Marketing <a href="mailto:marketing@allset.fr"><br> marketing@allset.fr </a> </p>
-    <p> Commercial <a href="mailto:commercial@allset.fr"><br> commercial@allset.fr </a> </p>
-  </div>
+            </div>
+        </div>
 
-
-  <div class="col-xs-6 col-sm-7">
-    <p> Technique <a href="mailto:technique@allset.fr"><br> technique@allset.fr </a> </p>
-    <p> Câblage <a href="mailto:infra@allset.fr"><br> infra@allset.fr </a> </p>
-</div>
-</div>
-  </div>
-
-
-
-<div class="col-xs-12 col-md-6">
-  <div class="col-xs-12 col-md-12">
-    <div class="map">
-      <div id="map">
-
-      </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="map">
+                <div id="map"></div>
+            </div>
+        </div>
     </div>
-      </div>
-    </div>
-
-
-  </div>
-</div> <!-- div class="row" principale -->
-</div> <!-- div class="container"-->
+</div>
