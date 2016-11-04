@@ -16,10 +16,10 @@
                 },
                 $onInit() {},
                 saveUser() {
-                    var message = this.contactInfo;
-                    console.log('SEND !!', message);
-                    toastr.success('Votre message a bien été envoyé', 'Message envoyé');
-                    $state.reload();
+                    var message = this.contactInfo; //contenu de l'email transformé en variable
+                    console.log('SEND !!', message); //contenu du mail mis dans la console
+                    toastr.success('Votre message a bien été envoyé', 'Message envoyé'); //toaster
+                    $state.reload(); //refresh
                 }
             })
         }
