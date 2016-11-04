@@ -35,7 +35,6 @@
     "nodemailer": "^2.6.4",
     "phantom": "^2.1.21",
     "sass-brunch": "^2.6.3",
-    "sendgrid": "^4.7.1",
     "uglify-js-brunch": "^2.0.1"
   }
 }
