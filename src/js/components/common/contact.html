@@ -5,65 +5,63 @@
     <div class="row">
         <div class="col-xs-12 col-md-6 nomap">
             <div class="row">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-5">
-                        <p>
-                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-                            Téléphone
-                        </p>
-                        <p>
-                            +33 (1) 49 38 12 20
-                        </p>
-                        <p>
-                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-                            Service technique</p>
-                        <p>
-                            +33 (1) 49 38 12 22
-                        </p>
-                        <p>
-                            <i class="fa fa-fax fa-lg" aria-hidden="true"></i>
-                            Fax
-                        </p>
-                        <p>
-                            +33 (1) 49 38 12 29
-                        </p>
-                        <p>
-                            <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-                            E-mail
-                        </p>
-                        <p>
-                            <a href="mailto:contact@allset.fr">
-                                contact@allset.fr
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-7">
-                        <p>
-                            <i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
-                            Adresse
-                        </p>
-                        <p>
-                            Central II, 460 clos de la Courtine
-                        </p>
-                        <p>
-                            93160 Noisy-le-Grand
-                        </p>
-                        <br>
-                        <br>
-                        <p>
-                            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-                            Nos établissements
-                        </p>
-                        <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-                            <p>
-                                <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-xs-6 col-sm-5">
+                    <p>
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                        Téléphone
+                    </p>
+                    <p>
+                        +33 (1) 49 38 12 20
+                    </p>
+                    <p>
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                        Service technique</p>
+                    <p>
+                        +33 (1) 49 38 12 22
+                    </p>
+                    <p>
+                        <i class="fa fa-fax fa-lg" aria-hidden="true"></i>
+                        Fax
+                    </p>
+                    <p>
+                        +33 (1) 49 38 12 29
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                        E-mail
+                    </p>
+                    <p>
+                        <a href="mailto:contact@allset.fr">
+                            contact@allset.fr
+                        </a>
+                    </p>
                 </div>
 
+                <div class="col-xs-6 col-sm-7">
+                    <p>
+                        <i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+                        Adresse
+                    </p>
+                    <p>
+                        Central II, 460 clos de la Courtine
+                    </p>
+                    <p>
+                        93160 Noisy-le-Grand
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                        Nos établissements
+                    </p>
+                    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+                        <p>
+                            <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+                        </p>
+                    </div>
+                </div>
             </div>
+
             <div class="col-xs-12 col-md-12">
                 <div class="row">
                     <div class="row">
