@@ -10,8 +10,7 @@ module.exports = mongoose.model('User', new mongoose.Schema({
             return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
         }, 'Please use a valid email address'],
     },
-    firstname: String,
-    lastname: String,
+    name: String,
     password: {
         type: String,
         required: true

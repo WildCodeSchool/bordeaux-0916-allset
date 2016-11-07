@@ -1,0 +1,78 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
+<section class="edit">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">
+                Liste des Utilisateurs
+            </h1>
+        </div>
+        <div class="row">
+        <button class="btn pull-right" ng-click="$ctrl.add()">
+            <i class="fa fa-plus"></i>
+            {{'COMMON_ADD' | translate}}</button>
+        </div>
+        <div class="cards row">
+            <div class="card col-xs-12 col-sm-12 col-md-5 col-lg-5 white-bg" ng-repeat="user in $ctrl.users | limitTo:4:$ctrl.startIndex " ng-class="{'selected': $ctrl.selectedUser == user}" ng-click="$ctrl.edit(user)">
+                <button class="btn danger col-sm-2 col-sm-offset-2" ng-click="$ctrl.delete($index, user)">
+                    <i class="fa fa-trash"></i>
+                </button>
+                <div class="row card-content">
+                    <div class="col-xs-4 col-xs-offset-1">
+                        <div>{{user.name || '?'}}</div>
+                        <div>{{user.email || '?'}}</div>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="label">{{(user.isAdmin ? 'COMMON_ADMIN' : 'COMMON_USER') | translate}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" ng-if="$ctrl.selectedUser">
+            <h4 class="header">{{'COMMON_EDIT' | translate}}</h4>
+            <form id="formUser" name="formUser" class="form">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="inputName" placeholder="{{'COMMON_LASTNAME' | translate}}" ng-model="$ctrl.selectedUser.name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="{{'COMMON_EMAIL' | translate}}" ng-model="$ctrl.selectedUser.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-required="true">
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-asterisk"></i>
+                            </span>
+                            <input type="password" class="form-control" id="inputPass" name="inputPass" placeholder="{{'COMMON_PASSWORD' | translate}}" ng-model="$ctrl.selectedUser.password" ng-required="!$ctrl.selectedUser._id">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <div class="input-group">
+                            <input id="boxAdmin" class="css-checkbox" type="checkbox" ng-model="$ctrl.selectedUser.isAdmin"/>
+                            <label for="boxAdmin" class="css-label">{{'COMMON_ADMIN' | translate}}</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group frm-buttons">
+                        <button type="submit" class="btn col-sm-4 pull-right" ng-click="$ctrl.save()" ng-disabled="formUser.$pristine || formUser.$invalid">
+                            <i class="fa fa-save"></i>
+                            {{'COMMON_SAVE' | translate}}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

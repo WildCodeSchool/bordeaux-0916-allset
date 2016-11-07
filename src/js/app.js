@@ -65,5 +65,9 @@
     'app.lesapropos',
     'app.whoiam',
     'app.admin',
-    'app.ml'
+    'app.ml',
+    'app.dashboard',
+    'app.dashboard.summary',
+    'app.dashboard.users',
+    'app.dashboard.posts'
 ]))
