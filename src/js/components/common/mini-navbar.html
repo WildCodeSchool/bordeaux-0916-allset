@@ -1,5 +1,23 @@
 <section>
     <div id="mininavbar" ng-if="$ctrl.user.isAdmin">
+      <div>
+          <div class="col-xs-6">
+              <a ui-sref="app.admin">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <p>
+                      Admin
+                  </p>
+              </a>
+          </div>
+        <div class="col-xs-6">
+            <a ng-click="$ctrl.disconnect()">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <p>
+                    Logout
+                </p>
+            </a>
+        </div>
+      </div>
         <div ng-if="!$ctrl.editMode">
 
                 <div class="col-xs-6">
@@ -7,14 +25,6 @@
                         <i class="fa fa-edit"></i>
                         <p>
                             Édition
-                        </p>
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a ng-click="$ctrl.disconnect()">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        <p>
-                            Logout
                         </p>
                     </a>
                 </div>

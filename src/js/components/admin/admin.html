@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row" ng-if="!$ctrl.user.isAdmin">
             <div class="col-sm-6 col-sm-offset-3">
                 <p class="subtitle text text-center" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.adminsubtitle"></p>
                 <div class="form-group">
@@ -36,9 +36,13 @@
                     </button>
                     <br/>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
                 <div class="text-center disconnect" ng-if="$ctrl.user.isAdmin">
                     <button class="btn" ui-sref="app.dashboard.users">Accéder au Dashboard Utilisateur
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </button>
                     <br/>
                 </div>
