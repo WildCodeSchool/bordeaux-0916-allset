@@ -32,9 +32,7 @@
                         if (angular.isUndefined(this.selectedUser._id))
                             this.users[this.users.length] = res.data
 
-                        this.selectedUser = this.users[this.users.length - 1]
-
-                        toastr.success(`${this.selectedUser.name} saved`)
+                        toastr.success(`${this.selectedUser.name} sauvegardé`)
                     }).catch((err) => {
                         toastr.error(`${err.data}`)
                     })
@@ -44,7 +42,7 @@
                     this.users.splice(idx, 1)
                     if (angular.isDefined(user._id)) {
                         UserService.delete(user).then(() => {
-                            toastr.success(`${user.name} deleted`)
+                            toastr.success(`${user.name} supprimé`)
                             this.selectedUser = null
                         }).catch((err) => {
                             toastr.error(`${err.data}`)

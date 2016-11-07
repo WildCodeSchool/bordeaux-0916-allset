@@ -27,7 +27,6 @@
 }
 
 .card {
-
     background-color: $background;
     //border-color: #c6d7e4;
     //background: $white-transparent;
@@ -46,12 +45,14 @@
     transition: all 200ms ease-in;
     transform: translateY(0px);
 
-    span{
-        color:black;
+    span {
+        color: black;
     }
-    .fa:not(.fa-angle-right){
-        color:black;
+
+    .fa:not(.fa-angle-right) {
+        color: black;
     }
+
     h4 {
         color: rgb(79,79,79);
         //margin: 25px;
@@ -129,4 +130,21 @@
 .concepts {
     margin-top: -15%;
     margin-bottom: 5%;
+}
+
+.edit {
+    .card.selected {
+        border: 2px solid #00b5ad;
+    }
+
+    .card {
+        border: 2px solid rgba(0,0,0,0);
+        margin: 1%;
+    }
+}
+
+#dashboard{
+    .card{
+        background-color: white
+    }
 }
